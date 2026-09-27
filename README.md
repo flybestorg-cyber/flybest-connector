@@ -1,8 +1,19 @@
-# FlyBest travel assistant — hotel search & booking for Claude and ChatGPT
+# AI Travel Booking System — FlyBest hotel booking connector for Claude & ChatGPT (MCP)
 
-An [MCP](https://modelcontextprotocol.io) connector that lets your AI assistant search
-hotel availability and rates, show hotel details and perks, and book — through a
-licensed travel agency's reservation system. Hotels only. No account, no password:
+**Search and book hotels with your AI assistant.** FlyBest is an AI travel booking
+connector built on the [Model Context Protocol](https://modelcontextprotocol.io): add one
+URL to Claude or ChatGPT and your assistant can check live hotel availability and rates,
+show hotel details and programme perks, create a secure one-time payment page, and manage
+your bookings — through a licensed travel agency's reservation system (Sabre). No app to
+install, no account to manage, free to use.
+
+> Keywords: AI travel booking · AI hotel booking · hotel booking agent · travel agent AI ·
+> MCP server · Claude connector · ChatGPT app · Sabre GDS · luxury travel · Virtuoso perks
+
+
+## What it is
+
+A remote MCP connector for hotel search and booking. Hotels only. No account, no password:
 you sign up with your e-mail, and your card is entered on a one-time page the
 assistant never sees.
 
