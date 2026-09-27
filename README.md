@@ -19,6 +19,32 @@ assistant never sees.
 
 **Connector URL:** `https://ai.flybest.org/mcp`
 
+## Why book through FlyBest instead of direct
+
+The rates are the hotel's own rates — usually the same price you would pay booking
+direct — but many of them come through the agency's **preferred-partner programmes**,
+which add benefits the hotel does not give walk-up guests. Typical inclusions on those
+rates:
+
+- **Daily breakfast for two**
+- **A property credit** (commonly US$100 per stay, for dining or spa) where the hotel offers one — the exact credit is confirmed by the agency at booking
+- **Room upgrade on arrival**, subject to availability
+- **Early check-in and late check-out**, subject to availability
+- **A welcome amenity**, and often VIP recognition on file
+
+Programmes the agency holds include **Virtuoso**, **Four Seasons Preferred Partner**,
+**Rosewood Elite**, **Mandarin Oriental Fan Club**, **Peninsula PenClub**, **Belmond
+Bellini Club**, **Dorchester Collection Diamond Club**, **Maybourne Exclusive**, **Hyatt
+Privé**, **Hilton for Luxury (Waldorf Astoria, Conrad, LXR)**, **IHG Destined
+(InterContinental, Six Senses, Kimpton)**, **Accor Preferred (Sofitel, Fairmont, Raffles)**,
+**Shangri-La Luxury Circle**, **Small Luxury Hotels "Within"**, **Preferred Platinum
+Partner**, **Kempinski Club 1897**, **Langham Couture**, **Rocco Forte Knights**, and
+**Jumeirah**. When a rate carries these benefits your assistant shows them next to the
+price, so you can compare a programme rate with the public one side by side.
+
+Plus: a licensed agency behind every booking (Coastline Travel Advisors), the booking is
+in your name with the hotel, and you can see and cancel it from the assistant.
+
 ## Connect
 
 ### Claude (claude.ai / Claude Desktop)

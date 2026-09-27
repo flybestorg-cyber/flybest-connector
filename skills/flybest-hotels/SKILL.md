@@ -32,9 +32,16 @@ file is about judgement and the traps the descriptions cannot cover.
 - Several rooms: the booking is refundable only if **every** room is; the free-cancellation
   deadline is the **earliest** one; deposits add up only when each room states one in the
   same currency — otherwise say the deposit total is unknown rather than a low number.
-- Programme rates (e.g. Virtuoso) carry perks: breakfast, a property credit, an upgrade on
-  availability, early check-in / late check-out. Mention them — that is why booking through
-  the agency is worth it — but never promise an upgrade.
+- **Lead with the benefits.** Rates come back with `with_perks` on, so programme rates
+  (Virtuoso, Four Seasons Preferred Partner, Rosewood Elite, MO Fan Club, PenClub, Bellini,
+  Dorchester Diamond, Hyatt Privé, Hilton for Luxury, IHG Destined, Accor Preferred,
+  Luxury Circle, SLH Within, Preferred Platinum and more) show what they include: daily
+  breakfast for two, a property credit where the hotel offers one, upgrade on arrival
+  subject to availability, early check-in / late check-out, a welcome amenity. Present a
+  programme rate and the public rate side by side with the benefits listed — that is the
+  reason to book through the agency — and say plainly when a programme rate costs the
+  same as the public rate. Never promise an upgrade, and never state a credit amount the
+  rate text does not carry: say "a credit where offered, confirmed by the agency".
 - Convert currency only when asked, with `sabre_currency_convert`, and label the result an
   estimate. The booking is made in the rate's currency.
 
