@@ -61,9 +61,9 @@ keep the reservation system fair for everyone. The assistant tells you when you 
 
 ## Who runs this
 
-FlyBest (flybest.org) — an independent luxury travel advisor affiliated with a licensed
-host agency. Hotel bookings are placed on the agency's accreditation; the agency earns
-a commission from the hotel on completed stays, which does not change the rate you pay.
+FlyBest (flybest.org) — an independent luxury travel advisor affiliated with Coastline
+Travel Advisors, a licensed host travel agency. Hotel bookings are placed through Coastline's
+reservation system on its accreditation. The connector is free to use; you pay only the hotel.
 
 This repository holds the public documentation and the assistant skill. The connector's
 server code is not published.
