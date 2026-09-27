@@ -44,8 +44,20 @@ is supported). Point it at the URL above.
   → you get a one-time payment link; the booking is made when you submit it.
 - "Show my bookings." / "Cancel my Kyoto booking."
 
-Install the skill in `skills/flybest-hotels/` to give your assistant the house
-rules (what to check before booking, how deposits work, what it must never do).
+## Install as a Claude plugin (recommended)
+
+This repository is also a **Claude plugin bundle**: it references the connector and
+ships the `flybest-hotels` skill, so Claude gets the house rules (what to check before
+booking, how deposits and cancellation terms work, what it must never do) automatically.
+Once listed, add it from **Customize → Plugins** in Claude; in Claude Code:
+
+```bash
+claude plugin add flybestorg-cyber/flybest-connector
+```
+
+Using ChatGPT or another client? The connector sends the same rules as server
+instructions when you connect, and you can paste `skills/flybest-hotels/SKILL.md` into
+a project or custom instructions.
 
 ## How booking works
 
