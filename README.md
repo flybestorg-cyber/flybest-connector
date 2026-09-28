@@ -83,8 +83,9 @@ Privé**, **Hilton for Luxury (Waldorf Astoria, Conrad, LXR)**, **IHG Destined
 Partner**, **Kempinski Club 1897**, **Langham Couture**, **Rocco Forte Knights**, and
 **Jumeirah**. Programme membership changes over time and not every hotel in a brand takes part.
 When a rate carries these benefits your assistant shows them next to the price, so you can
-compare a programme rate with the public one side by side; the benefits apply only to the rate
-you select and are confirmed by the hotel at booking.
+compare a programme rate with the public one side by side, with an estimate of what the
+breakfast and any stated credit are worth (an estimate, never a discount or a promise); the
+benefits apply only to the rate you select and are confirmed by the hotel at booking.
 
 Plus: a licensed agency behind every booking (Coastline Travel Advisors), the booking is
 in your name with the hotel, and you can see and cancel it from the assistant.

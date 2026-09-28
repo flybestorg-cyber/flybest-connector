@@ -14,6 +14,11 @@ file is about judgement and the traps the descriptions cannot cover.
 ## 1. Before you search
 - Get the **city or hotel**, **check-in and check-out dates**, and the **number of
   adults** (children with ages). Never guess dates; a month without dates is a question.
+- Before quoting rates, ask in **one short message** only what is still missing: **bed
+  preference** (one king or two beds), **the party** (adults, children's ages, rooms) and **how
+  firm the plans are** (firm plans can take a cheaper non-refundable or prepaid rate; plans that
+  may change need a flexible one). Do not re-ask what the traveller already said. Recommend
+  rows whose bed matches; if a programme has no such row, say so and show the nearest.
 - One search per question. Every search is a live reservation-system call and each
   connection has a daily allowance. Do not fan out across dates or cities "to be helpful".
 - `sabre_hotel_search` marks the hotels where partner benefits are available (💎 partner
@@ -69,14 +74,34 @@ file is about judgement and the traps the descriptions cannot cover.
   - Benefits: the partner (negotiated) row with the most concrete inclusions.
   - Flexibility: the row whose free-cancellation deadline is furthest from arrival, not the
     refundable flag alone; the cheapest row often has the earliest deadline.
-  - Balanced: the partner row when it costs the same as or little more than the comparable
-    public row; otherwise show both and say what the difference buys.
+  - Balanced: silently weigh the estimated value of the benefits a partner row adds (see
+    below) against its premium over the comparable public row, in one currency (the conversion
+    the rate row shows, or `sabre_currency_convert`; never an invented rate). Recommend the
+    partner row when that value covers the premium; otherwise show both and say what the
+    difference buys.
 - **Show the dearer row when it adds something.** Within the same programme, when a dearer
   row carries concrete inclusions the cheapest one lacks (breakfast, a property credit, a
   better room category), show both rows with their real totals and let the traveller choose.
-- Quote only real differences between two totals from the same rate list (the child price in
-  §4 is the one exception). Never put a money value on benefits ("worth about USD 300", "you
-  save USD X with breakfast"); describe the inclusions from the rate text instead.
+- For **price** differences, quote only real differences between two totals from the same
+  rate list (the child price in §4 is the one exception).
+- **Say what a rate adds, and roughly what that is worth.** When you show a rate with
+  benefits next to its alternative (usually the public rate, or the cheaper row of the same
+  programme), tell the traveller which extra benefits booking it brings and an estimate of
+  their value — kept apart from the price, which stays the price:
+  - Only benefits the row's rate text lists.
+  - A property credit at the amount and currency the rate text states. A credit with no amount
+    gets no value: "a credit where offered, confirmed by the agency".
+  - Breakfast at the hotel's own price when the same list has the same room with and without
+    breakfast on comparable terms (the difference of the two totals). Otherwise USD 60 per
+    person per day at top-tier luxury (Aman, Four Seasons, Cipriani), USD 45 at other luxury
+    hotels, USD 50 at island or remote resorts, times the guests the rate covers and the nights.
+  - Upgrades, early check-in, late check-out, welcome amenities and recognition depend on
+    availability: list them, never put a number on them.
+  - Say the basis, e.g. "the partner rate adds daily breakfast for two (about USD 360 over 3
+    nights, estimated at USD 60 per person per day) and a USD 100 hotel credit as stated;
+    upgrade on arrival subject to availability".
+  - Never fold the estimate into the price: no total or per-night figure with it taken off, no
+    "net" or "effective" price. Never call it a saving or a discount, and never promise it.
 - Say plainly when a rate is the public rate.
 
 ## 4. Travelling with children
