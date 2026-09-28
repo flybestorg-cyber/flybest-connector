@@ -127,12 +127,17 @@ file is about judgement and the traps the descriptions cannot cover.
   lacks partner rates and benefits, so recommend from the adults-only one.
 - Report what the rate text says about children: the child policy, the maximum occupancy,
   any extra-person or extra-bed charge, or "not stated".
-- **Do not create a payment link for a stay with children**, even with an adults-only rate
-  (the connector refuses one). Ask the traveller to e-mail flybestorg@gmail.com with the
-  hotel, dates, chosen room and rate, number of adults and the children's ages; the advisor
-  confirms the children with the hotel and completes the booking.
+- **A payment link for a stay with children books the adults only.** Before sending it, tell
+  the traveller: the link can only be made for the adults, so the stay is booked as N adults
+  (e.g. two adults); after they book, the advisor contacts the hotel to confirm the children and
+  whether anything changes (an extra-person charge, bedding) and gets back to them; the
+  advisor's e-mail is flybestorg@gmail.com if they need it. Use the adults-only rate key, and
+  pass `children` and `child_ages` to `sabre_hotel_card_link` so the advisor sees them.
+- Only a rate with **free cancellation** gets a family link, so they can secure it first. For a
+  non-refundable or prepaid rate there is no link: ask them to e-mail flybestorg@gmail.com with
+  the hotel, dates, chosen room and rate, number of adults and the children's ages.
 
-## 5. Booking (adults-only stays)
+## 5. Booking
 - Confirm in one message: hotel, room and rate, dates, guests, total, cancellation terms,
   guest name **exactly as on the ID** (never invent, transliterate or expand a name),
   e-mail, and a phone number if they have one. Then call `sabre_hotel_card_link` with `expected_total` and

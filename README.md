@@ -119,8 +119,8 @@ is supported). Point it at the URL above.
   → the assistant recommends by what matters to you (price, benefits or flexibility) and shows
   a dearer rate of the same programme next to the cheapest when it adds breakfast or a credit.
 - "Two adults and two children aged 8 and 10 in Paris, 20–23 December."
-  → you see the partner rates and what each rate says about children; the advisor confirms the
-  children with the hotel and completes that booking (payment links are for adults-only stays).
+  → you see the partner rates and what each rate says about children; you can secure a rate with
+  free cancellation for the adults, and the advisor then confirms the children with the hotel.
 - "Book the flexible rate under my name — here's my e-mail."
   → you get a one-time payment link; the booking is made when you submit it.
 - "Show my bookings." / "Cancel my Kyoto booking."
