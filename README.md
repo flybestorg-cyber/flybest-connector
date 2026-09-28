@@ -1,5 +1,7 @@
 # AI Travel Booking System — FlyBest hotel booking connector for Claude & ChatGPT (MCP)
 
+English · [中文](README.zh-CN.md)
+
 **Search and book hotels with your AI assistant.** FlyBest is an AI travel booking
 connector built on the [Model Context Protocol](https://modelcontextprotocol.io): add one
 URL to Claude or ChatGPT and your assistant can check live hotel availability and rates,
@@ -36,6 +38,23 @@ you sign up with your e-mail, and your card is entered on a one-time page the
 assistant never sees.
 
 **Connector URL:** `https://ai.flybest.org/mcp`
+
+## Why I built it
+
+I am a travel advisor. The slowest part of the job was asking hotels, one by one, whether a
+rate includes breakfast, whether there is a credit, whether an upgrade is possible, and until
+when it can be cancelled. A client says "have a look for me" and I disappear for an hour. So I
+handed that work to the assistant: it looks, it explains, and when you have chosen, it books.
+
+## How it differs from other AI travel tools
+
+| | Typical AI assistant / travel AI | FlyBest |
+|---|---|---|
+| Where prices come from | Web search, often cached | Live inventory and rates from the agency's reservation system |
+| Can it book? | Sends you a link to a booking site | Books the room, in your name, with the hotel |
+| Benefits | Cannot see agency-channel benefits | Benefits listed next to each rate, side by side with the public rate |
+| Cancellation terms | You read the fine print | Written out in plain words: free until when, deposit, non-refundable flagged |
+| After booking | On your own | See and cancel your own bookings in the conversation |
 
 ## Why book through FlyBest instead of direct
 
