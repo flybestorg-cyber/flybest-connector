@@ -33,8 +33,10 @@ file is about judgement and the traps the descriptions cannot cover.
   and the **cancellation terms in plain words**: free until when, or a deposit, or
   non-refundable. Never describe a non-refundable rate as flexible.
 - Read the policy fields, not the flags: `payment_policy` / `policy_summary` say whether a
-  deposit or prepayment applies and how much. A **deposit** is a fixed amount the hotel
-  takes; **prepaid** means the whole stay is charged at booking. Say which.
+  deposit or prepayment applies, how much and when. State the amount or how it is calculated
+  (a deposit may be a fixed sum, a percentage or a number of nights), the currency and when it
+  is taken. Do not assume a prepayment is collected immediately unless the policy says so; if
+  the amount or timing is unclear, say so instead of guessing.
 - Several rooms: the booking is refundable only if **every** room is; the free-cancellation
   deadline is the **earliest** one; deposits add up only when each room states one in the
   same currency — otherwise say the deposit total is unknown rather than a low number.
@@ -54,7 +56,7 @@ file is about judgement and the traps the descriptions cannot cover.
 ## 3. Booking
 - Confirm in one message: hotel, room and rate, dates, guests, total, cancellation terms,
   guest name **exactly as on the ID** (never invent, transliterate or expand a name),
-  e-mail and phone. Then call `sabre_hotel_card_link` with `expected_total` and
+  e-mail, and a phone number if they have one. Then call `sabre_hotel_card_link` with `expected_total` and
   `currency` **copied from the same rate row**.
 - `allow_deposit` and `allow_nonrefundable` mean "this rate may be offered". They are
   **not** the user's consent, and they do not prove the rate really takes a deposit — the
@@ -65,19 +67,28 @@ file is about judgement and the traps the descriptions cannot cover.
   receive or repeat card numbers.** If the user pastes one, tell them not to and send them
   to the page.
 - After they submit, call `my_trips` to show the confirmation number. If the page reports
-  the hotel could not confirm, nothing was charged; offer another rate or hotel. A hotel
-  that refuses one rate often accepts another rate at the same property.
+  that the hotel could not confirm, or the outcome is unclear, do not promise that nothing was
+  charged and do not book a replacement: check the booking status, and if it is still unclear
+  tell the user to e-mail flybestorg@gmail.com with the booking reference (never card details).
+  A hotel that refuses one rate often accepts another rate at the same property, once the
+  first attempt is confirmed closed.
 
 ## 4. Their bookings
 - `my_trips` lists only this user's bookings; nobody else's are visible.
-- `cancel_my_trip` needs `confirm=true` and is not reversible. Before calling it, restate
-  that booking's cancellation terms (a deposit may be kept; a non-refundable rate is
-  charged). If a booking says it must be cancelled by the agency, give the user the contact
-  address on flybest.org.
+- `cancel_my_trip` needs `confirm=true` and is not reversible. Before calling it: identify the
+  exact booking, state its cancellation deadline (hotel local time unless stated) and what the
+  hotel keeps or charges if it is cancelled now, then ask the user to confirm the cancellation
+  after seeing that. Set `confirm=true` only after that confirmation; setting it yourself is
+  not consent. Report a cancellation as done only when the tool confirms it. If the cost or
+  outcome is uncertain, or the booking says it must be cancelled by the agency, give the user
+  flybestorg@gmail.com and do not repeat the call.
 
 ## 5. Reading results honestly
-- A reply that contains `ok: false`, `changed: false` or a `reason` is a failure, whatever
-  else it says. Report it as a failure.
+- Read a tool's status fields together. `ok: false` means the operation did not report
+  success. `changed: false` can mean nothing needed changing (for example a booking that was
+  already cancelled); look at the booking status it returns. A `reason` explains an outcome and
+  does not by itself mean failure. If fields conflict or the outcome is unknown, say so, check
+  the booking, and ask the user to contact FlyBest before retrying a booking or cancellation.
 - A refusal from a tool usually says where the answer came from. Relay that reason; do not
   paraphrase it into "the tool didn't work".
 - Never retry a booking that returned an unknown outcome; say what happened and point to
@@ -94,4 +105,5 @@ file is about judgement and the traps the descriptions cannot cover.
 ## 7. When something is off
 - "Daily limit reached": the allowance resets at midnight UTC.
 - Hotel not found: search the city and match the name, or ask for the neighbourhood.
-- Money already taken, chargebacks, disputes: the contact address on flybest.org.
+- Money already taken, chargebacks, disputes, or anything the tools cannot do: e-mail
+  flybestorg@gmail.com with the booking reference. One advisor, Pacific time.

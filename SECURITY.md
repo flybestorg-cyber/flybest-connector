@@ -1,9 +1,14 @@
 # Reporting a security issue
 
-If you find a vulnerability in the FlyBest connector (`ai.flybest.org`) or its payment
-pages, please e-mail the contact address on flybest.org with "SECURITY" in the subject.
-Do not test against real bookings, other people's connections, or the reservation
-system's rate limits. We acknowledge reports within three business days.
+Report suspected vulnerabilities in the FlyBest connector (`ai.flybest.org`), its sign-up
+flow or its payment pages to **flybestorg@gmail.com** with "SECURITY" in the subject. We aim
+to acknowledge reports within three business days.
 
-Out of scope: rate limiting on the signup page (it is intentional), and anything that
-requires a victim's e-mail inbox.
+Welcome: authentication or authorization bypasses, cross-user access to bookings, weaknesses
+in the abuse controls, and anything that exposes card, booking or personal data. The
+intended sign-up rate limits and the compromise of someone's e-mail account are not, by
+themselves, connector vulnerabilities, but a report that uses them to reach something more
+is.
+
+Please do not test against other people's data, real bookings, or the service's capacity,
+and do not send card details in a report.
