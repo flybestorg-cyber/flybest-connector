@@ -73,8 +73,9 @@ does not normally give guests who book direct. Typical inclusions on those rates
 - **Early check-in and late check-out**, subject to availability
 - **A welcome amenity**, and often VIP recognition on file
 
-Programmes the agency holds include **Four Seasons Preferred Partner**,
-**Rosewood Elite**, **Mandarin Oriental Fan Club**, **Peninsula PenClub**, **Belmond
+Rates include **Virtuoso** hotel programme benefits where available, through Coastline Travel
+Advisors, a Virtuoso member agency. Other programmes the agency holds include **Four Seasons
+Preferred Partner**, **Rosewood Elite**, **Mandarin Oriental Fan Club**, **Peninsula PenClub**, **Belmond
 Bellini Club**, **Dorchester Collection Diamond Club**, **Maybourne Exclusive**, **Hyatt
 Privé**, **Hilton for Luxury (Waldorf Astoria, Conrad, LXR)**, **IHG Destined
 (InterContinental, Six Senses, Kimpton)**, **Accor Preferred (Sofitel, Fairmont, Raffles)**,
@@ -113,6 +114,12 @@ is supported). Point it at the URL above.
 
 - "Find me a hotel in Kyoto for 12–15 November, two adults, near Gion."
 - "Show the rates for the Park Hyatt with breakfast, and what the cancellation terms are."
+- "The cheapest refundable room, unless breakfast is only a little more."
+  → the assistant recommends by what matters to you (price, benefits or flexibility) and shows
+  a dearer rate of the same programme next to the cheapest when it adds breakfast or a credit.
+- "Two adults and two children aged 8 and 10 in Paris, 20–23 December."
+  → you see the partner rates and what each rate says about children; the advisor confirms the
+  children with the hotel and completes that booking (payment links are for adults-only stays).
 - "Book the flexible rate under my name — here's my e-mail."
   → you get a one-time payment link; the booking is made when you submit it.
 - "Show my bookings." / "Cancel my Kyoto booking."
