@@ -41,7 +41,7 @@ file is about judgement and the traps the descriptions cannot cover.
   deadline is the **earliest** one; deposits add up only when each room states one in the
   same currency — otherwise say the deposit total is unknown rather than a low number.
 - **Lead with the benefits.** Rates come back with `with_perks` on, so programme rates
-  (Virtuoso, Four Seasons Preferred Partner, Rosewood Elite, MO Fan Club, PenClub, Bellini,
+  (Four Seasons Preferred Partner, Rosewood Elite, MO Fan Club, PenClub, Bellini,
   Dorchester Diamond, Hyatt Privé, Hilton for Luxury, IHG Destined, Accor Preferred,
   Luxury Circle, SLH Within, Preferred Platinum and more) show what they include: daily
   breakfast for two, a property credit where the hotel offers one, upgrade on arrival

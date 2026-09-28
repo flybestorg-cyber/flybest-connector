@@ -9,7 +9,7 @@ and no password: you connect from your AI client and verify your e-mail. Free to
 the hotel.
 
 > Keywords: AI travel booking · AI hotel booking · hotel booking agent · travel agent AI ·
-> MCP server · Claude connector · ChatGPT app · Sabre GDS · luxury travel · Virtuoso perks
+> MCP server · Claude connector · ChatGPT app · Sabre GDS · luxury travel · preferred-partner perks
 
 **In the Claude directory:** open Claude → Customize → Connectors and search **FlyBest**, or open
 https://claude.ai/directory/connectors/flybest while signed in to Claude, and click *Connect*. (The plugin
@@ -22,7 +22,7 @@ Illustrative example, not a live quote:
 ```
 Hotel The Mitsui Kyoto, 12–15 Nov 2026, 2 adults
 
-[Virtuoso]  Deluxe Room, King · JPY 898,150 for the stay (tax-in) · free cancellation until 5 Nov
+[Partner]   Deluxe Room, King · JPY 898,150 for the stay (tax-in) · free cancellation until 5 Nov
             includes: daily breakfast for two · USD 100 hotel credit · upgrade on arrival (subject
             to availability) · early check-in / late check-out · welcome amenity
 [Public]    Deluxe Room, King · JPY 898,150 for the stay (tax-in) · free cancellation until 5 Nov
@@ -73,7 +73,7 @@ does not normally give guests who book direct. Typical inclusions on those rates
 - **Early check-in and late check-out**, subject to availability
 - **A welcome amenity**, and often VIP recognition on file
 
-Programmes the agency holds include **Virtuoso**, **Four Seasons Preferred Partner**,
+Programmes the agency holds include **Four Seasons Preferred Partner**,
 **Rosewood Elite**, **Mandarin Oriental Fan Club**, **Peninsula PenClub**, **Belmond
 Bellini Club**, **Dorchester Collection Diamond Club**, **Maybourne Exclusive**, **Hyatt
 Privé**, **Hilton for Luxury (Waldorf Astoria, Conrad, LXR)**, **IHG Destined
