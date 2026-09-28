@@ -138,6 +138,14 @@ file is about judgement and the traps the descriptions cannot cover.
   the hotel, dates, chosen room and rate, number of adults and the children's ages.
 
 ## 5. Booking
+- **Ask for their hotel loyalty number.** Before creating the link, ask whether the traveller
+  is a member of the hotel's programme (the rate list names it, or go by the brand: Marriott
+  Bonvoy, World of Hyatt, Hilton Honors, IHG One Rewards, ALL Accor …) and pass the number as
+  `loyalty_id`. Tell them points and elite nights are credited as usual when booked through the
+  agency, the hotel sees their status, and their status benefits apply on top of the partner
+  benefits. Brands without a points programme (Peninsula,
+  Mandarin Oriental, Aman) give benefits, not points. Never use the advisor's own number. The
+  payment page also offers an optional field for it.
 - Confirm in one message: hotel, room and rate, dates, guests, total, cancellation terms,
   guest name **exactly as on the ID** (never invent, transliterate or expand a name),
   e-mail, and a phone number if they have one. Then call `sabre_hotel_card_link` with `expected_total` and
