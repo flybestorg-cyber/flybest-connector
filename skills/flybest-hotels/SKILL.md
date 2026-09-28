@@ -61,6 +61,17 @@ file is about judgement and the traps the descriptions cannot cover.
   FlyBest or this connector as a Virtuoso member, product, "official" or "powered by Virtuoso"
   service. Rate plan names the reservation system returns (e.g. "VIRTUOSO 3RD NIGHT FREE") may
   be shown as they are.
+- When a Virtuoso rate's text lists no benefits (the rate list then says so), say the advisor
+  confirms this hotel's Virtuoso benefits, and give what Virtuoso includes **at most hotels**:
+  daily breakfast for two; a hotel credit, commonly USD 100 per stay, where the hotel offers
+  one; an upgrade on arrival and early check-in / late check-out, subject to availability;
+  complimentary Wi-Fi. Never present that list as confirmed for this rate, and never put an
+  estimated value on it.
+- If you can search the web, you may also look up that hotel's publicly listed Virtuoso
+  amenities (its page on virtuoso.com or a Virtuoso advisor's page). Present them as "publicly
+  listed Virtuoso amenities for this hotel", name the source and say the advisor confirms them at
+  booking. Use only amenities stated as Virtuoso's: search results often mix in other
+  programmes' terms (Four Seasons Preferred Partner, Amex FHR and the like). No estimated value.
 - Convert currency only when asked, with `sabre_currency_convert`, and label the result an
   estimate. The booking is made in the rate's currency.
 
