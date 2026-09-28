@@ -16,6 +16,10 @@ file is about judgement and the traps the descriptions cannot cover.
   adults** (children with ages). Never guess dates; a month without dates is a question.
 - One search per question. Every search is a live reservation-system call and each
   connection has a daily allowance. Do not fan out across dates or cities "to be helpful".
+- `sabre_hotel_search` marks the hotels that carry partner benefits (Member). When you present
+  a place's results, point those out and suggest checking their rates first; if the user named a
+  hotel with no Member rate, mention one or two comparable nearby hotels from the same search
+  that have one. Never invent a benefit the rate does not show.
 - `sabre_hotel_search` returns hotels with a lowest rate. To see all rates for one hotel,
   call `sabre_hotel_rates_coded` and **pass both `hotel_name` and `chain_code` from the
   search result**. Without them the call does not fail — it silently returns public rates

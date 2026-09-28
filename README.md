@@ -71,10 +71,10 @@ in your name with the hotel, and you can see and cancel it from the assistant.
 3. Click **Connect**. On the page that opens choose **Sign up with your e-mail**,
    enter your address, type the 6-digit code from the e-mail. Done.
 
-### ChatGPT
-1. Settings → Connectors (or Apps) → **Create** / add a custom MCP server.
-2. URL: `https://ai.flybest.org/mcp`, authentication: OAuth. Save and connect.
-3. Same e-mail signup page as above.
+### ChatGPT (web, developer mode)
+1. Settings → Security and login → enable **Developer mode**.
+2. Add a custom MCP server: URL `https://ai.flybest.org/mcp`, authentication: OAuth. Save and connect.
+3. Same e-mail sign-in page as above. Custom connectors are a ChatGPT web feature for now; the mobile apps may not show them.
 
 ### Other MCP clients
 Any client that speaks Streamable HTTP with OAuth 2.1 (dynamic client registration
