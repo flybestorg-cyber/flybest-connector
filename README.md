@@ -10,6 +10,24 @@ install, no account to manage, free to use.
 > Keywords: AI travel booking · AI hotel booking · hotel booking agent · travel agent AI ·
 > MCP server · Claude connector · ChatGPT app · Sabre GDS · luxury travel · Virtuoso perks
 
+**Now in the Claude directory:** open Claude → Customize → Connectors, search **FlyBest**, or go to
+https://claude.ai/directory/connectors/flybest and click *Connect*.
+
+### What a rate looks like with the benefits attached
+
+```
+Hotel The Mitsui Kyoto, 12–15 Nov, 2 adults
+
+[Virtuoso]  Deluxe Room, King · JPY 898,150 for the stay (tax-in) · free cancellation until 5 Nov
+            includes: daily breakfast for two · USD 100 hotel credit · upgrade on arrival (subject
+            to availability) · early check-in / late check-out · welcome amenity
+[Public]    Deluxe Room, King · JPY 898,150 for the stay (tax-in) · free cancellation until 5 Nov
+            includes: —
+```
+
+Same room, same price, one of them comes with the extras. That is the point of booking
+through a preferred-partner agency, and the assistant shows it every time.
+
 
 ## What it is
 
