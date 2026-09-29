@@ -95,6 +95,13 @@ Hilton Honors, IHG One Rewards, ALL Accor …) and you earn points and elite nig
 your status benefits on top of the partner benefits. Brands without a points programme
 (Peninsula, Mandarin Oriental, Aman and the like) give you the benefits instead of points.
 
+**Member rates.** At Hilton, Hyatt, IHG and I Prefer (Preferred Hotels) properties, the hotel's own
+member rates appear in the rate list next to the public and partner rates, marked members-only.
+They book with your own member number: the assistant searches that hotel again with it, and a rate
+found with your number books only with that number. No member discount is guaranteed, and Marriott
+member rates are not available through this connection. Joining Hilton Honors, World of Hyatt or
+IHG One Rewards is free.
+
 Plus: a licensed agency behind every booking (Coastline Travel Advisors), the booking is
 in your name with the hotel, and you can see and cancel it from the assistant.
 
@@ -129,6 +136,7 @@ is supported). Point it at the URL above.
 - "Two adults and two children aged 8 and 10 in Paris, 20–23 December."
   → you see the partner rates and what each rate says about children; you can secure a rate with
   free cancellation for the adults, and the advisor then confirms the children with the hotel.
+- "I'm a World of Hyatt member — show me the member rates at the Park Hyatt Tokyo too."
 - "Book the flexible rate under my name — here's my e-mail."
   → you get a one-time payment link; the booking is made when you submit it.
 - "Show my bookings." / "Cancel my Kyoto booking."

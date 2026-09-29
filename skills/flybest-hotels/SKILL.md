@@ -75,6 +75,22 @@ file is about judgement and the traps the descriptions cannot cover.
 - Convert currency only when asked, with `sabre_currency_convert`, and label the result an
   estimate. The booking is made in the rate's currency.
 
+### Member rates
+
+- Hilton Honors, World of Hyatt, IHG One Rewards and I Prefer (Preferred Hotels) member rates are
+  already in the rate list, marked members-only; search results mark these hotels with 👤, and the
+  rate list's "MEMBER RATES" line names the programme. Marriott member rates are not available
+  through this connection.
+- For a Marriott Bonvoy, IHG One Rewards, Hilton Honors, World of Hyatt or I Prefer hotel, ask whether
+  the traveller is a member before quoting. If they are, search that hotel's rates again with their
+  number as `loyalty_id`: the number goes to the hotel with the search, so any member offer it makes
+  can come back.
+- No member discount is guaranteed. Say which rates came back for the member; never promise one
+  before it appears.
+- A members-only row books only from a search made with the traveller's number, and a rate found
+  with a number books only with that same `loyalty_id`. Never use a number that is not the
+  traveller's own.
+
 ## 3. Recommending a rate
 - **Recommend by what matters to the traveller.** Read it from their words: budget
   ("cheapest", "within X"), benefits ("breakfast", "upgrade", "credit"), flexibility ("plans
@@ -141,7 +157,8 @@ file is about judgement and the traps the descriptions cannot cover.
 - **Ask for their hotel loyalty number.** Before creating the link, ask whether the traveller
   is a member of the hotel's programme (the rate list names it, or go by the brand: Marriott
   Bonvoy, World of Hyatt, Hilton Honors, IHG One Rewards, ALL Accor …) and pass the number as
-  `loyalty_id`. Tell them points and elite nights are credited as usual when booked through the
+  `loyalty_id` (for a members-only rate, the number must be the one the rate was searched with).
+  Tell them points and elite nights are credited as usual when booked through the
   agency, the hotel sees their status, and their status benefits apply on top of the partner
   benefits. Brands without a points programme (Peninsula,
   Mandarin Oriental, Aman) give benefits, not points. Never use the advisor's own number. The
