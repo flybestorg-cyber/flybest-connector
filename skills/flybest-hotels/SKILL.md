@@ -83,8 +83,8 @@ file is about judgement and the traps the descriptions cannot cover.
   - Budget: the lowest `total_after_tax`. When that row is non-refundable or takes a deposit,
     say so and show the cheapest refundable row next to it.
   - Benefits: the partner (negotiated) row with the most concrete inclusions.
-  - Flexibility: the row whose free-cancellation deadline is furthest from arrival, not the
-    refundable flag alone; the cheapest row often has the earliest deadline.
+  - Flexibility: the row whose free-cancellation deadline is latest (closest to arrival), not
+    the refundable flag alone; the cheapest refundable row often has the earliest deadline.
   - Balanced: silently weigh the estimated value of the benefits a partner row adds (see
     below) against its premium over the comparable public row, in one currency (the conversion
     the rate row shows, or `sabre_currency_convert`; never an invented rate). Recommend the
