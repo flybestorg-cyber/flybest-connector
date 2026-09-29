@@ -8,6 +8,8 @@ your bookings — through a licensed travel agency's reservation system (Sabre).
 and no password: you connect from your AI client and verify your e-mail. Free to use; you pay only
 the hotel.
 
+**Overview, examples and FAQ:** https://flybest.org/en/ai/ · 中文：https://flybest.org/ai/
+
 > Keywords: AI travel booking · AI hotel booking · hotel booking agent · travel agent AI ·
 > MCP server · Claude connector · ChatGPT app · Sabre GDS · luxury travel · preferred-partner perks
 
