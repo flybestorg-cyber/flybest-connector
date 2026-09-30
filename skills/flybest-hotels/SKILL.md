@@ -17,8 +17,10 @@ file is about judgement and the traps the descriptions cannot cover.
 - Before quoting rates, ask in **one short message** only what is still missing: **bed
   preference** (one king or two beds), **the party** (adults, children's ages, rooms) and **how
   firm the plans are** (firm plans can take a cheaper non-refundable or prepaid rate; plans that
-  may change need a flexible one). Do not re-ask what the traveller already said. Recommend
-  rows whose bed matches; if a programme has no such row, say so and show the nearest.
+  may change need a flexible one), and for a Marriott, Hyatt, Hilton, IHG, Accor or Preferred
+  Hotels property **whether they are a member, and the number** (see Member rates). Do not re-ask
+  what the traveller already said. Recommend rows whose bed matches; if a programme has no such
+  row, say so and show the nearest.
 - One search per question. Every search is a live reservation-system call and each
   connection has a daily allowance. Do not fan out across dates or cities "to be helpful".
 - `sabre_hotel_search` marks the hotels where partner benefits are available (💎 partner
@@ -33,8 +35,9 @@ file is about judgement and the traps the descriptions cannot cover.
   only, and the programme rates (with perks) disappear.
 
 ## 2. Presenting rates
-- For each rate give: the **stay total**, the **currency exactly as the rate row shows it**
-  (hotels quote in their own currency, not always USD), whether breakfast is included,
+- For each rate give: the **stay total** in the **currency exactly as the rate row shows it**
+  (hotels quote in their own currency, not always USD) plus an estimate in the traveller's own
+  currency (see Currency below), whether breakfast is included,
   and the **cancellation terms in plain words**: free until when, or a deposit, or
   non-refundable. Never describe a non-refundable rate as flexible.
 - Read the terms from the rate row itself, not from the flags: its guarantee line (card
@@ -72,8 +75,13 @@ file is about judgement and the traps the descriptions cannot cover.
   listed Virtuoso amenities for this hotel", name the source and say the advisor confirms them at
   booking. Use only amenities stated as Virtuoso's: search results often mix in other
   programmes' terms (Four Seasons Preferred Partner, Amex FHR and the like). No estimated value.
-- Convert currency only when asked, with `sabre_currency_convert`, and label the result an
-  estimate. The booking is made in the rate's currency.
+- **Currency.** Quote each total in the rate's own currency first, then an estimate in the
+  currency the traveller thinks in. Judge that from the conversation: the currency they name or
+  budget in, their language and where they live; ask only if it is unclear. Skip the second
+  figure when it is the same currency. Convert with `sabre_currency_convert` (once per currency
+  pair per answer, never an invented rate) and mark the converted figure as an estimate, e.g.
+  "JPY 898,150 (≈ USD 5,990, estimate)". The booking, `expected_total` and the payment page are
+  always in the rate's own currency; say so when you send the link.
 
 ### Member rates
 
@@ -81,10 +89,13 @@ file is about judgement and the traps the descriptions cannot cover.
   already in the rate list, marked members-only; search results mark these hotels with 👤, and the
   rate list's "MEMBER RATES" line names the programme. Marriott member rates are not available
   through this connection.
-- For a Marriott Bonvoy, IHG One Rewards, Hilton Honors, World of Hyatt or I Prefer hotel, ask whether
-  the traveller is a member before quoting. If they are, search that hotel's rates again with their
-  number as `loyalty_id`: the number goes to the hotel with the search, so any member offer it makes
-  can come back.
+- Ask whether the traveller is a member of the hotel's programme **before quoting**, in the §1
+  message, and keep the number for the rest of the conversation: it goes into the booking in §5
+  without asking again.
+- At a Hilton Honors, World of Hyatt, IHG One Rewards or I Prefer hotel, search that hotel's rates
+  with their number as `loyalty_id`: the number goes to the hotel with the search, so any member
+  offer it makes can come back. At a Marriott hotel, do not search again for member rates (none
+  come back through this connection); the number is still used for points at booking.
 - No member discount is guaranteed. Say which rates came back for the member; never promise one
   before it appears.
 - A members-only row books only from a search made with the traveller's number, and a rate found
@@ -103,7 +114,8 @@ file is about judgement and the traps the descriptions cannot cover.
     the refundable flag alone; the cheapest refundable row often has the earliest deadline.
   - Balanced: silently weigh the estimated value of the benefits a partner row adds (see
     below) against its premium over the comparable public row, in one currency (the conversion
-    the rate row shows, or `sabre_currency_convert`; never an invented rate). Recommend the
+    the rate row shows, or `sabre_currency_convert`; never an invented rate). This internal
+    comparison may convert even when you show no second currency. Recommend the
     partner row when that value covers the premium; otherwise show both and say what the
     difference buys.
 - **Show the dearer row when it adds something.** Within the same programme, when a dearer
@@ -121,7 +133,9 @@ file is about judgement and the traps the descriptions cannot cover.
   - Breakfast at the hotel's own price when the same list has the same room with and without
     breakfast on comparable terms (the difference of the two totals). Otherwise USD 60 per
     person per day at top-tier luxury (Aman, Four Seasons, Cipriani), USD 45 at other luxury
-    hotels, USD 50 at island or remote resorts, times the guests the rate covers and the nights.
+    hotels, USD 50 at island or remote resorts, times the nights and the number of guests the
+    rate text says breakfast is for (usually two; count two when it names no number), never
+    more than the guests staying.
   - Upgrades, early check-in, late check-out, welcome amenities and recognition depend on
     availability: list them, never put a number on them.
   - Say the basis, e.g. "the partner rate adds daily breakfast for two (about USD 360 over 3
@@ -154,13 +168,13 @@ file is about judgement and the traps the descriptions cannot cover.
   the hotel, dates, chosen room and rate, number of adults and the children's ages.
 
 ## 5. Booking
-- **Ask for their hotel loyalty number.** Before creating the link, ask whether the traveller
-  is a member of the hotel's programme (the rate list names it, or go by the brand: Marriott
-  Bonvoy, World of Hyatt, Hilton Honors, IHG One Rewards, ALL Accor …) and pass the number as
-  `loyalty_id` (for a members-only rate, the number must be the one the rate was searched with).
-  Tell them points and elite nights are credited as usual when booked through the
-  agency, the hotel sees their status, and their status benefits apply on top of the partner
-  benefits. Brands without a points programme (Peninsula,
+- **Hotel loyalty number.** Pass the number the traveller gave before quoting as `loyalty_id`
+  without asking again (for a members-only rate, it must be the one the rate was searched with).
+  Ask only if membership never came up (the rate list names the programme, or go by the brand:
+  Marriott Bonvoy, World of Hyatt, Hilton Honors, IHG One Rewards, ALL Accor …). Tell them points
+  and elite nights are usually credited when booked through the agency, subject to the hotel
+  programme's terms for the rate booked, the hotel sees their status, and their status benefits
+  apply on top of the partner benefits. Brands without a points programme (Peninsula,
   Mandarin Oriental, Aman) give benefits, not points. Never use the advisor's own number. The
   payment page also offers an optional field for it.
 - Confirm in one message: hotel, room and rate, dates, guests, total, cancellation terms,

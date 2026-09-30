@@ -24,17 +24,18 @@ Illustrative example, not a live quote:
 ```
 Hotel The Mitsui Kyoto, 12–15 Nov 2026, 2 adults
 
-[Partner]   Deluxe Room, King · JPY 898,150 for the stay (tax-in) · free cancellation until 5 Nov
+[Partner]   Deluxe Room, King · JPY 898,150 (≈ USD 5,990, estimate) for the stay (tax-in) · free cancellation until 5 Nov
             includes: daily breakfast for two · USD 100 hotel credit · upgrade on arrival (subject
             to availability) · early check-in / late check-out · welcome amenity
-[Public]    Deluxe Room, King · JPY 898,150 for the stay (tax-in) · free cancellation until 5 Nov
+[Public]    Deluxe Room, King · JPY 898,150 (≈ USD 5,990, estimate) for the stay (tax-in) · free cancellation until 5 Nov
             includes: —
 ```
 
 Same room, same price in this example, and one of them comes with the extras. A programme rate
 can also cost more or less than the public rate, so the assistant shows both side by side; only
 the benefits confirmed for the rate you choose apply, and upgrades and early or late times depend
-on availability on the day.
+on availability on the day. Prices are in the hotel's own currency, with an estimate in yours;
+you book and pay in the hotel's currency.
 
 
 ## What it is
@@ -59,7 +60,7 @@ handed that work to the assistant: it looks, it explains, and when you have chos
 | Where prices come from | Usually web search or a third-party feed | Live inventory and rates from the agency's reservation system |
 | Can it book? | Usually sends you to a booking site | Books the room, in your name, with the hotel |
 | Benefits | Usually cannot show agency-channel benefits | Benefits listed next to each rate, side by side with the public rate |
-| Your hotel loyalty | Varies | Points and elite nights earned as usual; your status benefits on top of the partner benefits |
+| Your hotel loyalty | Varies | Points and elite nights usually earned, per the hotel programme's terms; your status benefits on top of the partner benefits |
 | Cancellation terms | You read the fine print | Written out in plain words: free until when, deposit, non-refundable flagged |
 | After booking | Varies | See and cancel your own bookings in the conversation |
 
@@ -91,8 +92,9 @@ breakfast and any stated credit are worth (an estimate, never a discount or a pr
 benefits apply only to the rate you select and are confirmed by the hotel at booking.
 
 **You keep your hotel loyalty.** Add your member number (Marriott Bonvoy, World of Hyatt,
-Hilton Honors, IHG One Rewards, ALL Accor …) and you earn points and elite nights as usual, with
-your status benefits on top of the partner benefits. Brands without a points programme
+Hilton Honors, IHG One Rewards, ALL Accor …) and you usually earn points and elite nights, subject
+to the hotel programme's terms for the rate booked, with your status benefits on top of the partner
+benefits. The assistant asks for it before quoting and uses it when it books. Brands without a points programme
 (Peninsula, Mandarin Oriental, Aman and the like) give you the benefits instead of points.
 
 **Member rates.** At Hilton, Hyatt, IHG and I Prefer (Preferred Hotels) properties, the hotel's own
