@@ -172,8 +172,8 @@ file is about judgement and the traps the descriptions cannot cover.
   without asking again (for a members-only rate, it must be the one the rate was searched with).
   Ask only if membership never came up (the rate list names the programme, or go by the brand:
   Marriott Bonvoy, World of Hyatt, Hilton Honors, IHG One Rewards, ALL Accor …). Tell them points
-  and elite nights are usually credited when booked through the agency, subject to the hotel
-  programme's terms for the rate booked, the hotel sees their status, and their status benefits
+  and elite nights are credited as usual when booked through the agency, the hotel sees their
+  status, and their status benefits
   apply on top of the partner benefits. Brands without a points programme (Peninsula,
   Mandarin Oriental, Aman) give benefits, not points. Never use the advisor's own number. The
   payment page also offers an optional field for it.
