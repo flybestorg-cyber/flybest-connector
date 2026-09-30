@@ -60,7 +60,7 @@ handed that work to the assistant: it looks, it explains, and when you have chos
 | Where prices come from | Usually web search or a third-party feed | Live inventory and rates from the agency's reservation system |
 | Can it book? | Usually sends you to a booking site | Books the room, in your name, with the hotel |
 | Benefits | Usually cannot show agency-channel benefits | Benefits listed next to each rate, side by side with the public rate |
-| Your hotel loyalty | Varies | Points and elite nights usually earned, per the hotel programme's terms; your status benefits on top of the partner benefits |
+| Your hotel loyalty | Varies | Points and elite nights earned as usual; your status benefits on top of the partner benefits |
 | Cancellation terms | You read the fine print | Written out in plain words: free until when, deposit, non-refundable flagged |
 | After booking | Varies | See and cancel your own bookings in the conversation |
 
@@ -92,10 +92,10 @@ breakfast and any stated credit are worth (an estimate, never a discount or a pr
 benefits apply only to the rate you select and are confirmed by the hotel at booking.
 
 **You keep your hotel loyalty.** Add your member number (Marriott Bonvoy, World of Hyatt,
-Hilton Honors, IHG One Rewards, ALL Accor …) and you usually earn points and elite nights, subject
-to the hotel programme's terms for the rate booked, with your status benefits on top of the partner
-benefits. The assistant asks for it before quoting and uses it when it books. Brands without a points programme
-(Peninsula, Mandarin Oriental, Aman and the like) give you the benefits instead of points.
+Hilton Honors, IHG One Rewards, ALL Accor …) and you earn points and elite nights as usual, with
+your status benefits on top of the partner benefits. The assistant asks for it before quoting
+and uses it when it books. Brands without a points programme (Peninsula, Mandarin Oriental,
+Aman and the like) give you the benefits instead of points.
 
 **Member rates.** At Hilton, Hyatt, IHG and I Prefer (Preferred Hotels) properties, the hotel's own
 member rates appear in the rate list next to the public and partner rates, marked members-only.
