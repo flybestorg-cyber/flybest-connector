@@ -145,16 +145,51 @@ is supported). Point it at the URL above.
   → you get a one-time payment link; the booking is made when you submit it.
 - "Show my bookings." / "Cancel my Kyoto booking."
 
-## Install as a Claude plugin (once listed)
+## Install in Claude Code
 
 This repository is also a **Claude plugin bundle**: it references the connector and
 ships the `flybest-hotels` skill, so Claude gets the house rules (what to check before
 booking, how deposits and cancellation terms work, what it must never do) automatically.
-Once listed, add it from **Customize → Plugins** in Claude; in Claude Code:
+
+Requires Claude Code 2.1.76 or later; the latest version is recommended (`claude update`).
+
+In a terminal:
 
 ```bash
-claude plugin add flybestorg-cyber/flybest-connector
+claude plugin marketplace add flybestorg-cyber/flybest-connector
+claude plugin install flybest-hotels@flybest
 ```
+
+Or inside a Claude Code session:
+
+```text
+/plugin marketplace add flybestorg-cyber/flybest-connector
+/plugin install flybest-hotels@flybest
+```
+
+On first use, run `/mcp`, pick the FlyBest server (`plugin:flybest-hotels:flybest`), and authenticate. A browser page opens;
+sign in with an e-mail code.
+
+**Version notes:** Installing requires 2.1.76 or later; 2.1.75 and 2.1.72 (the earlier versions tested) refuse the
+manifest's `displayName` and `privacyPolicyUrl` keys. Installation was tested on
+2.1.76, 2.1.142, 2.1.144, 2.1.145 and 2.1.287. On 2.1.76 and 2.1.287,
+`claude mcp list` shows the server as needing authentication after installation.
+The developer check `claude plugin validate` is separate from installing: it errors
+on `displayName` up to 2.1.142, then on `privacyPolicyUrl` in 2.1.143–2.1.144.
+In 2.1.145–2.1.280 it passes with one warning: "Unknown field 'privacyPolicyUrl'.
+Claude Code ignores it at load time." From 2.1.281 it passes clean.
+
+For older Claude Code versions, or if you only want the tools:
+
+```bash
+claude mcp add --transport http flybest https://ai.flybest.org/mcp
+```
+
+This connects the server's tools and its own booking rules, without the
+`flybest-hotels` skill. Use `/mcp`, pick `flybest`, and sign in as above.
+
+Once listed in the directory, add it from **Customize → Plugins** in Claude
+(desktop or web).
 
 Using ChatGPT or another client? The connector sends its core booking rules as server
 instructions when you connect (this skill is the fuller version), and you can paste
