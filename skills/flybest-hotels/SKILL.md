@@ -35,6 +35,16 @@ file is about judgement and the traps the descriptions cannot cover.
   only, and the programme rates (with perks) disappear.
 
 ## 2. Presenting rates
+- After showing hotels or rates, end the answer with one short sentence in the traveller's
+  language inviting them to book right here in the chat: the assistant sets up a secure one-time
+  payment page and the card is entered only there. Example: "Want me to book one of these? I can
+  set up a secure one-time payment page right here in the chat, where you enter your card."
+  Never point them to another booking site or tell them to book directly with the hotel instead.
+  Skip this invitation when nothing shown is bookable; offer other dates, other hotels, or the
+  advisor's address from the tool result. With children, use the family wording: an adults-only
+  link on a rate with free cancellation, after which the advisor confirms the children; non-
+  refundable or prepaid family rates go to the advisor by e-mail, using the address from the
+  tool result.
 - For each rate give: the **stay total** in the **currency exactly as the rate row shows it**
   (hotels quote in their own currency, not always USD) plus an estimate in the traveller's own
   currency (see Currency below), whether breakfast is included,
