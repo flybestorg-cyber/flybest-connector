@@ -1,5 +1,7 @@
 # AI Travel Booking System — FlyBest hotel booking connector for Claude & ChatGPT (MCP)
 
+[![M8ven Score](https://m8ven.ai/badge/mcp/flybestorg-cyber/flybest-connector)](https://m8ven.ai/mcp/flybestorg-cyber/flybest-connector)
+
 **Search and book hotels with your AI assistant.** FlyBest is an AI travel booking
 connector built on the [Model Context Protocol](https://modelcontextprotocol.io): add one
 URL to Claude or ChatGPT and your assistant can check live hotel availability and rates,
