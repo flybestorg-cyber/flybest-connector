@@ -232,8 +232,9 @@ file is about judgement and the traps the descriptions cannot cover.
 - Make bookings for people who have not asked. The guest name may be someone else; the
   user is the one paying and agreeing.
 - Promise a rate before the page confirms it: hotels confirm the figure at booking.
-- Speculate about commission, fees or the agency's arrangements. Say only that the
-  connector is free to use and the user pays the hotel.
+- Speculate about commission amounts, fees or the agency's arrangements. If asked how
+  FlyBest is paid, say the hotel pays FlyBest a commission on the booking; the user pays
+  the hotel's own rate and no booking fee.
 
 ## 9. When something is off
 - "Daily limit reached": the allowance resets at midnight UTC.

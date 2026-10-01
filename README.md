@@ -201,7 +201,8 @@ FlyBest (flybest.org) — an independent luxury travel advisor based in Californ
 affiliated with Coastline Travel Advisors, a licensed host travel agency. FlyBest operates this
 connector and is responsible for its signup and booking data; hotel bookings are placed through
 Coastline's reservation system on its accreditation. The connector is free to use; you pay only
-the hotel. Contact: flybestorg@gmail.com.
+the hotel. FlyBest is paid by commission from the hotel; you do not pay more for booking
+through it. Contact: flybestorg@gmail.com.
 
 This repository holds the public documentation and the assistant skill. The connector's
 server code is not published.
