@@ -206,10 +206,16 @@ payment page and the booking confirmation yourself.
    ticked and when you ticked them. Card details are never part of what the assistant
    sends or receives, so never type them in the chat.
 3. The hotel confirms; you get a confirmation number in the chat and the agency gets
-   a copy of the booking. If the hotel's price at booking differs from the figure on
-   the page, the booking is not made and you can ask for a new page. If the page
-   reports that the hotel could not confirm, or the outcome is unclear, e-mail
-   flybestorg@gmail.com with the booking reference before trying again.
+   a copy of the booking. If the same stay's price or terms change before booking,
+   the payment page can show the updated terms and ask you to agree again before
+   continuing. A different room, date or currency needs a new quote. If the result
+   is unclear, check your trips or e-mail flybestorg@gmail.com with the reference
+   before trying again; do not create another booking while the first is being checked.
+
+To cancel, the assistant first retrieves a cancellation preview, shows the current
+terms and asks for your confirmation. If the hotel charges a cancellation fee, you
+must explicitly accept it before the request is sent. Changed terms need fresh
+confirmation; a completed cancellation does not by itself confirm a refund.
 
 Some rates take a deposit at booking or are non-refundable. The page says so in
 plain words before you tick; nothing is charged until you do.
