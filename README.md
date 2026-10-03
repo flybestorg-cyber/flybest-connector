@@ -253,3 +253,8 @@ through it. Contact: flybestorg@gmail.com.
 
 This repository holds the public documentation and the assistant skill. The connector's
 server code is not published.
+
+
+## Code maintenance
+
+Before changing this repository, read [AGENTS.md](AGENTS.md) and the [maintenance records](docs/maintenance/README.md). Every change includes its root cause or reason, approach and verification in the linked log. See [CONTRIBUTING.md](CONTRIBUTING.md).
