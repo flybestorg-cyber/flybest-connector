@@ -118,13 +118,16 @@ in your name with the hotel, and you can see and cancel it from the assistant.
    enter your address, type the 6-digit code from the e-mail. Done.
 
 ### ChatGPT (web, developer mode)
-1. Settings → Security and login → enable **Developer mode**.
-2. Add a custom MCP server: URL `https://ai.flybest.org/mcp`, authentication: OAuth. Save and connect.
+1. Where your account and workspace permit it, open Settings → Apps → Advanced Settings → **Developer mode**. Workspace administrators may need to enable access first.
+2. From Settings → Apps → **Create**, enter URL `https://ai.flybest.org/mcp`, authentication: OAuth, and complete the tool scan and connection.
 3. Same e-mail sign-in page as above.
 
 ChatGPT support is experimental: custom connectors are a ChatGPT web feature (developer mode),
 availability depends on your account and workspace settings, and FlyBest has not yet completed
 end-to-end testing on a real ChatGPT account. The mobile apps are not verified.
+Read OpenAI's [current developer-mode and MCP app instructions](https://help.openai.com/en/articles/12584461-developer-mode-and-mcp-apps-in-chatgpt)
+for account eligibility, workspace permissions and support for booking/cancellation actions.
+An administrator may need to refresh and approve updated tool definitions after a connector update.
 
 ### Other MCP clients
 Any client that speaks Streamable HTTP with OAuth 2.1 (dynamic client registration

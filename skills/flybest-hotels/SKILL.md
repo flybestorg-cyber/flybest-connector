@@ -59,6 +59,12 @@ file is about judgement and the traps the descriptions cannot cover.
 - Several rooms: the booking is refundable only if **every** room is; the free-cancellation
   deadline is the **earliest** one; deposits add up only when each room states one in the
   same currency — otherwise say the deposit total is unknown rather than a low number.
+- Rooms with the same guests-per-room arrangement and room type can share a multi-room
+  quote and payment link; the total already covers all rooms. When rooms have different
+  numbers of adults, children or children's ages, explain that they need **separate one-room
+  quotes and payment links** before offering to book. Keep each room's party and ages with
+  its own quote. Never reuse the combined rate key for one room or divide its total to
+  invent a single-room price. The family rules below still apply to every room with children.
 - **Lead with the benefits.** Rates come back with `with_perks` on, so programme rates
   (Virtuoso, Four Seasons Preferred Partner, Rosewood Elite, MO Fan Club, PenClub, Bellini,
   Dorchester Diamond, Hyatt Privé, Hilton for Luxury, IHG Destined, Accor Preferred,
@@ -167,6 +173,10 @@ file is about judgement and the traps the descriptions cannot cover.
   lacks partner rates and benefits, so recommend from the adults-only one.
 - Report what the rate text says about children: the child policy, the maximum occupancy,
   any extra-person or extra-bed charge, or "not stated".
+- If the supplier's room occupancy differs or cannot be verified, the family total is
+  unverified. Do not assume all returned prices are adults-only when only some rooms
+  differ, and do not invent a child fee. Obtain the required separate quotes or ask the
+  advisor to confirm the actual family price and occupancy.
 - **A payment link for a stay with children books the adults only.** Before sending it, tell
   the traveller: the link can only be made for the adults, so the stay is booked as N adults
   (e.g. two adults); after they book, the advisor contacts the hotel to confirm the children and
@@ -233,6 +243,10 @@ file is about judgement and the traps the descriptions cannot cover.
   Report success only when the tool confirms it. Cancellation does not itself prove a
   refund. When the tool requires the agency or cannot verify the fee, use its advisor
   contact (flybestorg@gmail.com if none is supplied).
+- If the advisor verifies a missing fee, obtain a fresh cancellation preview, show the
+  verified amount and validity window, and ask the traveller to agree before continuing.
+  An advisor's verification is not the traveller's consent; never supply or invent a
+  verified fee on the traveller's behalf.
 
 ## 7. Reading results honestly
 - Read a tool's status fields together. `ok: false` means the operation did not report
