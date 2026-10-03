@@ -141,8 +141,11 @@ is supported). Point it at the URL above.
   → the assistant recommends by what matters to you (price, benefits or flexibility) and shows
   a dearer rate of the same programme next to the cheapest when it adds breakfast or a credit.
 - "Two adults and two children aged 8 and 10 in Paris, 20–23 December."
-  → you see the partner rates and what each rate says about children; you can secure a rate with
-  free cancellation for the adults, and the advisor then confirms the children with the hotel.
+  → the search uses all four guests and the children's ages. A rate verified for that family
+  can be booked directly through a secure payment page, including deposit or non-refundable
+  rates after you accept their terms. If occupancy cannot be verified, Jay can help; an
+  adults-first booking is available only if you explicitly choose it, with free cancellation,
+  no deposit or prepayment, and the children still pending hotel confirmation.
 - "I'm a World of Hyatt member — show me the member rates at the Park Hyatt Tokyo too."
 - "Book the flexible rate under my name — here's my e-mail."
   → you get a one-time payment link; the booking is made when you submit it.

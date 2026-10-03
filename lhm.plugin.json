@@ -1,7 +1,7 @@
 {
   "identifier": "flybest-travel-hotels",
   "name": "FlyBest Travel — Hotel Booking with Advisor Benefits",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "Live hotel rates from a licensed travel agency's reservation system, with the travel-advisor benefits (daily breakfast, hotel credit, upgrades) shown next to the public rate, your own hotel loyalty points on top, and a one-time payment page to book. Hotels only. Free to use.",
   "cloudEndpoint": "https://ai.flybest.org/mcp",
   "homepage": "https://flybest.org/en/ai/",
