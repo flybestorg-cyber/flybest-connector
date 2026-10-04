@@ -30,9 +30,11 @@ file is about judgement and the traps the descriptions cannot cover.
   first; if the user named a hotel with no partner rate, mention one or two comparable nearby
   hotels from the same search that have one. Never invent a benefit the rate does not show.
 - `sabre_hotel_search` returns hotels with a lowest rate. To see all rates for one hotel,
-  call `sabre_hotel_rates_coded` and **pass both `hotel_name` and `chain_code` from the
-  search result**. Without them the call does not fail — it silently returns public rates
-  only, and the programme rates (with perks) disappear.
+  call `sabre_hotel_rates_coded` with **`hotel_name` and `chain_code` copied from that
+  hotel's search result**. Both are required: a call without them is refused before anything
+  is sent. They also select which programme rates (with perks) are asked for, so never guess
+  them. When the traveller names a hotel directly, search its city first and take both from
+  that hotel's row.
 
 ## 2. Presenting rates
 - After showing hotels or rates, end the answer with one short sentence in the traveller's
@@ -65,7 +67,7 @@ file is about judgement and the traps the descriptions cannot cover.
   its own quote. Never reuse the combined rate key for one room or divide its total to
   invent a single-room price. The family rules below still apply to every room with children.
 - **Lead with the benefits.** Rates come back with `with_perks` on, so programme rates
-  (Virtuoso, Four Seasons Preferred Partner, Rosewood Elite, MO Fan Club, PenClub, Bellini,
+  (Virtuoso, Rosewood Elite, MO Fan Club, PenClub, Bellini,
   Dorchester Diamond, Hyatt Privé, Hilton for Luxury, IHG Destined, Accor Preferred,
   Luxury Circle, SLH Within, Preferred Platinum and more) show what they include: daily
   breakfast for two, a property credit where the hotel offers one, upgrade on arrival
@@ -74,6 +76,11 @@ file is about judgement and the traps the descriptions cannot cover.
   reason to book through the agency — and say plainly when a programme rate costs the
   same as the public rate. Never promise an upgrade, and never state a credit amount the
   rate text does not carry: say "a credit where offered, confirmed by the agency".
+- Four Seasons Preferred Partner rates are not available through this connection. A partner
+  rate at a Four Seasons hotel comes through another programme: present the benefits its own
+  rate text lists and never call it a Four Seasons Preferred Partner rate. If the traveller
+  asks for Four Seasons Preferred Partner, say the advisor arranges it directly
+  (flybestorg@gmail.com).
 - Virtuoso rates: say only that rates may include Virtuoso hotel programme benefits where
   available, through Coastline Travel Advisors, a Virtuoso member agency. Never present
   FlyBest or this connector as a Virtuoso member, product, "official" or "powered by Virtuoso"
@@ -164,9 +171,12 @@ file is about judgement and the traps the descriptions cannot cover.
 - Ask each child's age up front. By default, call `sabre_hotel_rates_coded` with the **actual
   adults, children and `child_ages`**. City-search prices are provisional and do not establish
   family availability. Do not first search adults only or silently remove the children.
-- **Direct family booking:** choose a row marked `direct_family_bookable`; its own
-  `family_occupancy` verifies the selected party. Other rows may be unverified. Pass that row's
-  `rate_key` and `family_quote_token` unchanged to `sabre_hotel_card_link`, with
+- **Direct family booking:** choose a row that says "Family occupancy verified for this rate —
+  direct family booking available." (what the tool description calls `direct_family_bookable`).
+  Its "Requested family for this rate" line shows the party the rate was quoted for (its
+  `family_occupancy`), and only such a row carries a `family_quote_token=` line. A row that says
+  "Family occupancy is unverified for this rate" is not verified for the family. Pass the
+  verified row's `rate_key` and `family_quote_token` unchanged to `sabre_hotel_card_link`, with
   `family_mode="direct"` and the actual adults, children and ages. Never reuse another row's
   token. The page rechecks occupancy before booking.
 - Direct family rates can be refundable, non-refundable, deposit or prepaid. Explain the
@@ -204,7 +214,8 @@ file is about judgement and the traps the descriptions cannot cover.
 - Confirm in one message: hotel, room and rate, dates, guests, total, cancellation terms,
   guest name **exactly as on the ID** (never invent, transliterate or expand a name),
   e-mail, and a phone number if they have one. Then call `sabre_hotel_card_link` with `expected_total` and
-  `currency` **copied from the same rate row**.
+  `currency` **copied from the same rate row**, and the same `rooms` and `adults` (per room) that
+  rate was quoted for.
 - `allow_deposit` and `allow_nonrefundable` mean "this rate may be offered". They are
   **not** the user's consent, and they do not prove the rate really takes a deposit — the
   page reads the live terms. Set them only for a rate whose terms you have told the user.
@@ -253,15 +264,22 @@ file is about judgement and the traps the descriptions cannot cover.
   verified fee on the traveller's behalf.
 
 ## 7. Reading results honestly
-- Read a tool's status fields together. `ok: false` means the operation did not report
-  success. `changed: false` can mean nothing needed changing (for example a booking that was
-  already cancelled); look at the booking status it returns. A `reason` explains an outcome and
-  does not by itself mean failure. If fields conflict or the outcome is unknown, say so, check
-  the booking, and ask the user to contact FlyBest before retrying a booking or cancellation.
+- Results are plain sentences; there are no `ok` / `changed` status fields. Read what the
+  sentence says happened, together with the error flag (`isError`) when a result carries it.
+  The sentence decides the outcome; the same kind of sentence can arrive with or without the flag.
+- "Refused before anything was sent … Nothing was called" means a missing or invalid argument:
+  correct it as the sentence says and call again.
+- An explicit refusal says that nothing happened ("Nothing was cancelled.", "No new cancellation
+  was sent", "nothing was changed"): relay its reason and follow its stated next step.
+  "Already cancelled" means the booking is already cancelled; nothing more is needed.
+- An outcome that is not known says so ("was sent, but its result could not be confirmed",
+  "is being verified", "do NOT send it again"): check `my_trip`, tell the user what happened and
+  point them to flybestorg@gmail.com. Never send the same booking or cancellation again.
+- Report a cancellation or booking as done only when the result says so: "Cancelled: …" for a
+  cancellation, a confirmation number in `my_trips` for a booking. A payment link is not yet a
+  booking.
 - A refusal from a tool usually says where the answer came from. Relay that reason; do not
   paraphrase it into "the tool didn't work".
-- Never retry a booking that returned an unknown outcome; say what happened and point to
-  the agency contact.
 
 ## 8. What you must not do
 - Book flights, or suggest the connector can.

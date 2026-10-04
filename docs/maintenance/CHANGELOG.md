@@ -6,3 +6,7 @@
 
 - [今日行为基线与已发布版本](entries/2026-10-02-release-baseline.md)
 - [建立维护记录要求并保存日报](entries/2026-10-02-maintenance-policy.md)
+
+## 2026-10-04 洛杉矶
+
+- [公开文档对齐线上公开工具契约（插件 1.1.5）](entries/2026-10-04-b11-connector.md)

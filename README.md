@@ -79,10 +79,12 @@ does not normally give guests who book direct. Typical inclusions on those rates
 - **Early check-in and late check-out**, subject to availability
 - **A welcome amenity**, and often VIP recognition on file
 
-Rates include **Virtuoso** hotel programme benefits where available, through Coastline Travel
-Advisors, a Virtuoso member agency. Other programmes the agency holds include **Four Seasons
-Preferred Partner**, **Rosewood Elite**, **Mandarin Oriental Fan Club**, **Peninsula PenClub**, **Belmond
-Bellini Club**, **Dorchester Collection Diamond Club**, **Maybourne Exclusive**, **Hyatt
+<!-- Fixed wording: keep the next sentence verbatim (no bold, keep "may"); it must match the
+     connector's server instructions and terms. See docs/maintenance/entries/2026-10-04-b11-connector.md -->
+Rates may include Virtuoso hotel programme benefits where available, through Coastline Travel
+Advisors, a Virtuoso member agency. Other programmes the agency holds include **Rosewood
+Elite**, **Mandarin Oriental Fan Club**, **Peninsula PenClub**, **Belmond Bellini Club**,
+**Dorchester Collection Diamond Club**, **Maybourne Exclusive**, **Hyatt
 Privé**, **Hilton for Luxury (Waldorf Astoria, Conrad, LXR)**, **IHG Destined
 (InterContinental, Six Senses, Kimpton)**, **Accor Preferred (Sofitel, Fairmont, Raffles)**,
 **Shangri-La Luxury Circle**, **Small Luxury Hotels "Within"**, **Preferred Platinum
@@ -92,6 +94,13 @@ When a rate carries these benefits your assistant shows them next to the price, 
 compare a programme rate with the public one side by side, with an estimate of what the
 breakfast and any stated credit are worth (an estimate, never a discount or a promise); the
 benefits apply only to the rate you select and are confirmed by the hotel at booking.
+
+<!-- Four Seasons Preferred Partner is not among the programmes this connection queries; see
+     docs/maintenance/entries/2026-10-04-b11-connector.md before listing it above again. -->
+The agency also holds **Four Seasons Preferred Partner**, but those rates are not available
+through this connection: a partner rate shown at a Four Seasons hotel comes through another
+programme, with that programme's own benefits. The advisor arranges Four Seasons Preferred
+Partner bookings directly (flybestorg@gmail.com).
 
 **You keep your hotel loyalty.** Add your member number (Marriott Bonvoy, World of Hyatt,
 Hilton Honors, IHG One Rewards, ALL Accor …) and you earn points and elite nights as usual, with
@@ -141,7 +150,8 @@ is supported). Point it at the URL above.
   → the assistant recommends by what matters to you (price, benefits or flexibility) and shows
   a dearer rate of the same programme next to the cheapest when it adds breakfast or a credit.
 - "Two adults and two children aged 8 and 10 in Paris, 20–23 December."
-  → the search uses all four guests and the children's ages. A rate verified for that family
+  → city search prices are provisional; the assistant then checks the chosen hotel's rates for
+  all four guests and the children's ages. A rate verified for that family
   can be booked directly through a secure payment page, including deposit or non-refundable
   rates after you accept their terms. If occupancy cannot be verified, Jay can help; an
   adults-first booking is available only if you explicitly choose it, with free cancellation,
@@ -183,7 +193,10 @@ manifest's `displayName` and `privacyPolicyUrl` keys. Installation was tested on
 The developer check `claude plugin validate` is separate from installing: it errors
 on `displayName` up to 2.1.142, then on `privacyPolicyUrl` in 2.1.143–2.1.144.
 In 2.1.145–2.1.280 it passes with one warning: "Unknown field 'privacyPolicyUrl'.
-Claude Code ignores it at load time." From 2.1.281 it passes clean.
+Claude Code ignores it at load time." From 2.1.281 the manifest passes clean; on 2.1.284 the
+check also reports one warning that the maintainer notes file `CLAUDE.md` at the repository root
+is not loaded as plugin context. That is expected: the file is for maintainers, and the skill
+ships separately under `skills/`.
 
 For older Claude Code versions, or if you only want the tools:
 
