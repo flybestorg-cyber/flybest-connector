@@ -1,6 +1,6 @@
 # 2026-10-04 公开文档对齐线上公开工具契约（插件 1.1.5）
 
-- 记录 ID：2026-10-04-b11-connector
+- 记录 ID：2026-10-04-public-docs-live-contract
 - 日期与时区：2026-10-04，洛杉矶
 - 关联旧记录或修复：[公开酒店插件 1.1.4 基线](2026-10-02-release-baseline.md)、[建立持续维护记录](2026-10-02-maintenance-policy.md)
 - 影响仓库、文件和用户入口：本仓库 `README.md`、`skills/flybest-hotels/SKILL.md`、`.claude-plugin/plugin.json`、`lhm.plugin.json`。用户入口是 GitHub 上的 README、Claude Code 插件里的 skill，以及被用户粘贴到 ChatGPT 等客户端的 `SKILL.md`。服务端没有改动。
@@ -27,7 +27,7 @@
      - 主机会在发出任何请求之前拒绝缺参的调用（"Refused before anything was sent … Nothing was called"）。
      - 就算没有这道闸门，后端返回的也不只是公开价。
      - 根因：这句话沿用了更早的运营说明，而必填闸门在此之前就已经上线。
-   - b. SKILL §7 要助手读 `ok` / `changed` / `reason` 字段。可 8 个公开工具都只返回文字句子，失败时带 `isError`，根本没有这些字段。
+   - b. SKILL §7 要助手读 `ok` / `changed` / `reason` 字段。可 8 个公开工具都只返回文字句子，根本没有这些字段；部分失败（参数拒绝、额度、内部错误等）带 `isError`，取消的拒绝句不一定带。
    - c. SKILL §4 要助手找标记为 `direct_family_bookable` 的行，并查看 `family_occupancy`。公开输出不打印这两个字段名，能看到的是：
      - "Family occupancy verified for this rate — direct family booking available."
      - "Requested family for this rate: …"
@@ -65,7 +65,7 @@
 **保持不变**
 - 公开连接仍是 8 个酒店工具。
 - 佣金说明不变：酒店向 FlyBest 支付佣金，客人只付酒店自己的房价、没有订房费，不提金额或比例。
-- Virtuoso 固定句的措辞不变。
+- 已批准的 Virtuoso 原句本身不变，本次只是把 README 里的转写改回原句。
 - 家庭 `direct` / `adult_pending` 规则不变。
 - 取消仍是两步，含 `accept_penalty`。
 - Run of House 不承诺 King。
@@ -97,7 +97,7 @@
 
 ## 版本与发布状态
 
-- 相关代码提交或 PR：见本条记录的 Git 提交（分支 `fix/b11-connector-2026-10-04`）。
+- 相关代码提交或 PR：见本条记录的 Git 提交。
 - GitHub 推送状态：本地提交，未推送，未部署（由编排者合并发布后补充）。
 - 服务器实际运行版本和核验时间：不适用。本仓库没有服务端代码，服务端也没有改动。
 - 是否重启或只同步文档：不需要重启。

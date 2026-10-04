@@ -80,7 +80,7 @@ does not normally give guests who book direct. Typical inclusions on those rates
 - **A welcome amenity**, and often VIP recognition on file
 
 <!-- Fixed wording: keep the next sentence verbatim (no bold, keep "may"); it must match the
-     connector's server instructions and terms. See docs/maintenance/entries/2026-10-04-b11-connector.md -->
+     connector's server instructions and terms. See docs/maintenance/entries/2026-10-04-public-docs-live-contract.md -->
 Rates may include Virtuoso hotel programme benefits where available, through Coastline Travel
 Advisors, a Virtuoso member agency. Other programmes the agency holds include **Rosewood
 Elite**, **Mandarin Oriental Fan Club**, **Peninsula PenClub**, **Belmond Bellini Club**,
@@ -96,7 +96,7 @@ breakfast and any stated credit are worth (an estimate, never a discount or a pr
 benefits apply only to the rate you select and are confirmed by the hotel at booking.
 
 <!-- Four Seasons Preferred Partner is not among the programmes this connection queries; see
-     docs/maintenance/entries/2026-10-04-b11-connector.md before listing it above again. -->
+     docs/maintenance/entries/2026-10-04-public-docs-live-contract.md before listing it above again. -->
 The agency also holds **Four Seasons Preferred Partner**, but those rates are not available
 through this connection: a partner rate shown at a Four Seasons hotel comes through another
 programme, with that programme's own benefits. The advisor arranges Four Seasons Preferred
@@ -193,8 +193,8 @@ manifest's `displayName` and `privacyPolicyUrl` keys. Installation was tested on
 The developer check `claude plugin validate` is separate from installing: it errors
 on `displayName` up to 2.1.142, then on `privacyPolicyUrl` in 2.1.143–2.1.144.
 In 2.1.145–2.1.280 it passes with one warning: "Unknown field 'privacyPolicyUrl'.
-Claude Code ignores it at load time." From 2.1.281 the manifest passes clean; on 2.1.284 the
-check also reports one warning that the maintainer notes file `CLAUDE.md` at the repository root
+Claude Code ignores it at load time." From 2.1.281 the manifest passes clean; on 2.1.284,
+validating the plugin manifest (`.claude-plugin/plugin.json`) also reports one warning that the maintainer notes file `CLAUDE.md` at the repository root
 is not loaded as plugin context. That is expected: the file is for maintainers, and the skill
 ships separately under `skills/`.
 
