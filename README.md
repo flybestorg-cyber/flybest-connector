@@ -48,6 +48,19 @@ never in the chat.
 
 **Connector URL:** `https://ai.flybest.org/mcp`
 
+## MCP Registry
+
+The registered server is **`org.flybest/travel-hotels`**. Its publishing metadata is
+maintained in [server.json](server.json), including the link to this public repository.
+This repository provides the hosted service's documentation, MCP Registry metadata,
+and Claude plugin bundle.
+
+To use the hosted server, add `https://ai.flybest.org/mcp` as a **Streamable HTTP**
+connection in an MCP client with **OAuth** support, then complete the browser sign-in
+with your e-mail code. No local server installation or separate API key is required.
+See [Connect](#connect) for client setup and [What you can ask](#what-you-can-ask) for
+hotel search, rate comparison, booking and cancellation examples.
+
 ## Why I built it
 
 I am a travel advisor. The slowest part of the job was asking hotels, one by one, whether a

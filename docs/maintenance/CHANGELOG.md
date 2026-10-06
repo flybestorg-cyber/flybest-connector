@@ -10,3 +10,7 @@
 ## 2026-10-04 洛杉矶
 
 - [公开文档对齐线上公开工具契约（插件 1.1.5）](entries/2026-10-04-public-docs-live-contract.md)
+
+## 2026-10-05 洛杉矶
+
+- [MCP Registry 补充公开仓库地址，登记版本 1.0.2，README 增加配置和使用入口](entries/2026-10-05-mcp-registry-repository.md)
