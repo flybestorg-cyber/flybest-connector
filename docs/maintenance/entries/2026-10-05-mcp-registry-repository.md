@@ -38,3 +38,10 @@ GitHub MCP Registry 审核要求官方 MCP Registry 条目包含公开 repositor
 ## 剩余边界与后续事项
 
 官方 Registry 发布成功不代表 GitHub 目录已重新审核或收录。完成后可把公开仓库、清单和官方条目链接回复审核团队，由其重新运行审核。回信是独立动作，本次修改不自动发送邮件。
+
+## 发布结果补记（2026-10-05 18:31 PDT）
+
+- [be0ca633d5153a811f55dcd8d682c65c380dafdb](https://github.com/flybestorg-cyber/flybest-connector/commit/be0ca633d5153a811f55dcd8d682c65c380dafdb) 已推送到公开仓库 main；匿名读取 [server.json](https://github.com/flybestorg-cyber/flybest-connector/blob/main/server.json) 和 README 成功，内容与本次审查一致。
+- 官方 `2025-12-11/server.schema.json` 校验通过；与原 1.0.1 的清单比较，仅版本及 repository 变化。发布工具报告 `Successfully published`，服务器名 `org.flybest/travel-hotels`、版本 `1.0.2`。
+- [官方 latest 条目](https://registry.modelcontextprotocol.io/v0.1/servers/org.flybest%2Ftravel-hotels/versions/latest) 回读为 `version=1.0.2`、`status=active`、`isLatest=true`；repository URL 与 source=github 均正确。官方发布时间为 `2026-10-06T01:31:29.578443Z`（洛杉矶 2026-10-05 18:31:29 PDT）。
+- Git 工作区没有混入认证文件；未改动服务端、公开工具权限或 OAuth 配置，也没有重启服务、执行真实预订或发出审核邮件。GitHub 目录是否收录仍以其后续审核结果为准。

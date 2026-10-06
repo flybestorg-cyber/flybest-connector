@@ -14,3 +14,4 @@
 ## 2026-10-05 洛杉矶
 
 - [MCP Registry 补充公开仓库地址，登记版本 1.0.2，README 增加配置和使用入口](entries/2026-10-05-mcp-registry-repository.md)
+- [发布补记：公开清单已推送，官方 Registry 1.0.2 已发布并回读 active/latest](entries/2026-10-05-mcp-registry-repository.md#发布结果补记2026-10-05-1831-pdt)
