@@ -11,18 +11,48 @@ user's behalf. The tools are `sabre_hotel_search`, `sabre_hotel_rates_coded`,
 `my_trip` and `cancel_my_trip`. Read each tool's description for its parameters; this
 file is about judgement and the traps the descriptions cannot cover.
 
+## Turn hotel interest into a priced choice
+- When the traveller asks where to stay in a city or asks about a named property,
+  include live formal quotes and the benefits attached to each selected partner
+  rate in that same answer. Do not stop with hotel descriptions or ask whether
+  they would like you to check prices.
+- If check-in/check-out dates or the party (adults, children with ages, rooms) are
+  missing, ask for the missing essentials together in one short message. Once
+  known, search and quote without another permission step. Optional preferences
+  and membership questions can accompany the answer; they do not block public
+  or partner quotes. If the traveller has not specified beds, label the returned
+  bed type and confirm it before booking.
+- For a city request, discover properties, choose a short list suited to the
+  stated budget, location and preferences (usually two or three), then fetch each
+  candidate's authoritative rates with benefits. For a named property, fetch its
+  rates immediately once its verified property mapping is known. Reuse a reliable
+  mapping already in this conversation; otherwise obtain it from city discovery.
+  This is one coherent search task, not a new permission request per property.
+- Read [Quote integrity](references/quote-integrity.md) before presenting prices.
+  Show room/bed, nights and rooms, total and currency, the selected row's PP
+  benefits, cancellation deadline and payment timing. If a comparable public rate
+  exists, show its actual total and explain what the partner option adds. Keep
+  benefit estimates separate from prices under §3. If partner benefits are not
+  verified, say so; do not turn a generic programme list into confirmed inclusions.
+- Close with a concrete choice and booking action in the traveller's language:
+  “Which hotel and rate would you like? Confirm your choice here and I can set up
+  its secure payment page.” Use a shorter confirmation when the choice is already
+  clear. Do not ask the traveller to request the quote again. When nothing suitable
+  is bookable, give the specific next step from the result instead.
+- Keep a discovery-only shortlist or a temporary rate-fetch failure clearly
+  provisional. Continue the supported rate lookup in this turn; if it cannot
+  produce a formal quote, explain the actual obstacle without inventing a price.
 ## 1. Before you search
 - Get the **city or hotel**, **check-in and check-out dates**, and the **number of
   adults** (children with ages). Never guess dates; a month without dates is a question.
-- Before quoting rates, ask in **one short message** only what is still missing: **bed
-  preference** (one king or two beds), **the party** (adults, children's ages, rooms) and **how
-  firm the plans are** (firm plans can take a cheaper non-refundable or prepaid rate; plans that
-  may change need a flexible one), and for a Marriott, Hyatt, Hilton, IHG, Accor or Preferred
-  Hotels property **whether they are a member, and the number** (see Member rates). Do not re-ask
-  what the traveller already said. Recommend rows whose bed matches; if a programme has no such
-  row, say so and show the nearest.
-- One search per question. Every search is a live reservation-system call and each
-  connection has a daily allowance. Do not fan out across dates or cities "to be helpful".
+- Ask only what is missing. Use stated bed, budget and flexibility preferences;
+  invite the traveller to supply these if unknown while still giving the quote
+  for the known dates and party. Ask about hotel membership without requiring a
+  number to show public or partner options (see Member rates). Never re-ask a
+  supplied or declined preference. Match stated beds; flag any mismatch or unknown.
+- Avoid unrequested date/city expansion. Discovery plus rates for the selected
+  shortlist, member verification and targeted missing-room recovery are necessary
+  parts of the request, not prohibited extra searches. Respect the daily allowance.
 - `sabre_hotel_search` marks the hotels where partner benefits are available (💎 partner
   benefits available). That marks the property, not the price shown next to it: the benefits
   belong to the partner rate you get from `sabre_hotel_rates_coded`, never to a public rate.
@@ -33,8 +63,8 @@ file is about judgement and the traps the descriptions cannot cover.
   call `sabre_hotel_rates_coded` with **`hotel_name` and `chain_code` copied from that
   hotel's search result**. Both are required: a call without them is refused before anything
   is sent. They also select which programme rates (with perks) are asked for, so never guess
-  them. When the traveller names a hotel directly, search its city first and take both from
-  that hotel's row.
+  them. For a named hotel, use its reliable mapping already returned in this
+  conversation, or search its city to obtain the matching row.
 
 ## 2. Presenting rates
 - After showing hotels or rates, end the answer with one short sentence in the traveller's
@@ -111,9 +141,10 @@ file is about judgement and the traps the descriptions cannot cover.
   already in the rate list, marked members-only; search results mark these hotels with 👤, and the
   rate list's "MEMBER RATES" line names the programme. Marriott member rates are not available
   through this connection.
-- Ask whether the traveller is a member of the hotel's programme **before quoting**, in the §1
-  message, and keep the number for the rest of the conversation: it goes into the booking in §5
-  without asking again.
+- Ask about membership near the start, but do not withhold public or partner
+  quotes while awaiting a number. Before confirming a members-only option, obtain
+  the traveller's own number and re-search with it. Keep a supplied number for its
+  own programme and reuse it at booking without asking again.
 - At a Hilton Honors, World of Hyatt, IHG One Rewards or I Prefer hotel, search that hotel's rates
   with their number as `loyalty_id`: the number goes to the hotel with the search, so any member
   offer it makes can come back. At a Marriott hotel, do not search again for member rates (none
@@ -205,15 +236,19 @@ file is about judgement and the traps the descriptions cannot cover.
 - **Hotel loyalty number.** Pass the number the traveller gave before quoting as `loyalty_id`
   without asking again (for a members-only rate, it must be the one the rate was searched with).
   Ask only if membership never came up (the rate list names the programme, or go by the brand:
-  Marriott Bonvoy, World of Hyatt, Hilton Honors, IHG One Rewards, ALL Accor …). Tell them points
-  and elite nights are credited as usual when booked through the agency, the hotel sees their
-  status, and their status benefits
-  apply on top of the partner benefits. Brands without a points programme (Peninsula,
+  Marriott Bonvoy, World of Hyatt, Hilton Honors, IHG One Rewards, ALL Accor …).
+  The hotel's programme can recognise their membership on an eligible agency rate.
+  Points, elite-night credit and overlapping status/partner benefits depend
+  on the selected rate's eligibility and the hotel's programme terms; do not
+  promise that every rate earns or every benefit stacks. Brands without a points programme (Peninsula,
   Mandarin Oriental, Aman) give benefits, not points. Never use the advisor's own number. The
   payment page also offers an optional field for it.
 - Confirm in one message: hotel, room and rate, dates, guests, total, cancellation terms,
   guest name **exactly as on the ID** (never invent, transliterate or expand a name),
-  e-mail, and a phone number if they have one. Then call `sabre_hotel_card_link` with `expected_total` and
+  e-mail, and a phone number if they have one. For multiple rooms, explain that
+  rooms sold together on one segment may not be independently cancellable; if
+  individual-room cancellation is needed, obtain the advisor's help before booking.
+  Then call `sabre_hotel_card_link` with `expected_total` and
   `currency` **copied from the same rate row**, and the same `rooms` and `adults` (per room) that
   rate was quoted for.
 - `allow_deposit` and `allow_nonrefundable` mean "this rate may be offered". They are
@@ -236,7 +271,11 @@ file is about judgement and the traps the descriptions cannot cover.
   make that correction and continue after any newly required consent. A timeout alone
   does not prove that nothing was booked. Keep each traveller's own returned link;
   never reuse somebody else's page or generate extra pages to bypass an uncertain result.
-- After they submit, call `my_trips` to show the confirmation number. If the page reports
+- After they submit, call `my_trips`, then `my_trip` for the selected booking when
+  details need checking. Show the hotel's confirmation number and verify property,
+  dates, room/bed, room count, party, total/currency and cancellation terms against
+  the selected quote. Treat requests such as connecting rooms as requests until
+  the hotel confirms them; label any missing or unverified detail explicitly. If the page reports
   that the hotel could not confirm, or the outcome is unclear, do not promise that nothing was
   charged and do not book a replacement: check the booking status, and if it is still unclear
   tell the user to e-mail flybestorg@gmail.com with the booking reference (never card details).
