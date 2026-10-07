@@ -225,7 +225,8 @@ Once listed in the directory, add it from **Customize → Plugins** in Claude
 
 Using ChatGPT or another client? The connector sends its core booking rules as server
 instructions when you connect (this skill is the fuller version), and you can paste
-`skills/flybest-hotels/SKILL.md` into a project or custom instructions. Either way, check the
+`skills/flybest-hotels/SKILL.md` together with its linked
+`references/quote-integrity.md` into a project or custom instructions. Either way, check the
 payment page and the booking confirmation yourself.
 
 ## How booking works
