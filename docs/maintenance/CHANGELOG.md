@@ -25,3 +25,4 @@
 
 - [Customer-facing hotel Skill refresh: targeted benefits, booking verification and plugin installation guidance (1.1.7)](entries/2026-10-08-public-hotel-skill-refresh.md)
 - [Publication receipt: source 1.1.7 pushed and GitHub main verified; no backend restart](entries/2026-10-08-public-hotel-skill-refresh.md#publication-receipt--2026-10-08-1608-pdt)
+- [Claude directory verification: 1.1.7 passed scanning and is Serving after automatic publication](entries/2026-10-08-public-hotel-skill-refresh.md#claude-directory-live-verification--2026-10-08-1614-pdt)
