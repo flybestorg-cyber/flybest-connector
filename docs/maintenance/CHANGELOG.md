@@ -20,3 +20,7 @@
 
 - [Priced recommendations and booking conversion (1.1.6)](entries/2026-10-07-hotel-skills-conversion.md)
 - [Publication receipt: PR merged, version 1.1.6 published, related MCP guidance deployed and health verified](entries/2026-10-07-hotel-skills-conversion.md#publication-and-live-verification--2026-10-07-pdt)
+
+## 2026-10-08 洛杉矶
+
+- [Customer-facing hotel Skill refresh: targeted benefits, booking verification and plugin installation guidance (1.1.7)](entries/2026-10-08-public-hotel-skill-refresh.md)

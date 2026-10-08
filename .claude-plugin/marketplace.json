@@ -1,12 +1,17 @@
 {
   "name": "flybest",
-  "owner": { "name": "FlyBest", "email": "flybestorg@gmail.com" },
-  "metadata": { "description": "FlyBest's Claude Code plugins: live luxury hotel rates, advisor benefits and booking." },
+  "owner": {
+    "name": "FlyBest",
+    "email": "jay@flybest.org"
+  },
+  "metadata": {
+    "description": "FlyBest's Claude Code plugins: live luxury hotel rates, advisor benefits and booking."
+  },
   "plugins": [
     {
       "name": "flybest-hotels",
       "source": "./",
-      "description": "Search live hotel availability and rates, see perks and cancellation terms, and book through a licensed travel agency with a secure one-time payment page. Hotels only, free to use."
+      "description": "Live hotel tools and Skills for comparing rates, advisor benefits and cancellation terms, then booking securely. Hotels only, free to use."
     }
   ]
 }

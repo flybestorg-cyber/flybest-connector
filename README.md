@@ -1,23 +1,27 @@
-# AI Travel Booking System — FlyBest hotel booking connector for Claude & ChatGPT (MCP)
+# FlyBest hotel booking plugin — live hotel tools and Skills for Claude
 
 [![M8ven Score](https://m8ven.ai/badge/mcp/flybestorg-cyber/flybest-connector)](https://m8ven.ai/mcp/flybestorg-cyber/flybest-connector)
 
-**Search and book hotels with your AI assistant.** FlyBest is an AI travel booking
-connector built on the [Model Context Protocol](https://modelcontextprotocol.io): add one
-URL to Claude or ChatGPT and your assistant can check live hotel availability and rates,
-show hotel details and programme perks, create a secure one-time payment page, and manage
-your bookings — through a licensed travel agency's reservation system (Sabre). No separate app
-and no password: you connect from your AI client and verify your e-mail. Free to use; you pay only
-the hotel.
+**Search, compare and book hotels with your AI assistant.** The FlyBest plugin
+bundles live hotel tools and the `flybest-hotels` Skill: check rates for your actual
+dates and guests, compare rooms, advisor benefits and cancellation terms, create
+a secure one-time payment page, and manage your own bookings. The Skill guides
+Claude through quote checks, rate selection and booking verification.
+
+The tools connect to a licensed travel agency's reservation system (Sabre) through
+[MCP](https://modelcontextprotocol.io). Add the plugin in Claude, then authenticate
+with your email code when connecting its hotel tools. Compatible clients can also
+connect to the MCP service directly. Free to use; you pay only the hotel.
 
 **Overview, examples and FAQ:** https://flybest.org/en/ai/ · 中文：https://flybest.org/ai/
 
 > Keywords: AI travel booking · AI hotel booking · hotel booking agent · travel agent AI ·
-> MCP server · Claude connector · ChatGPT app · Sabre GDS · luxury travel · preferred-partner perks
+> Claude plugin · hotel Skills · MCP server · Sabre GDS · luxury travel · preferred-partner perks
 
-**In the Claude directory:** open Claude → Customize → Connectors and search **FlyBest**, or open
-https://claude.ai/directory/connectors/flybest while signed in to Claude, and click *Connect*. (The plugin
-bundle in this repository is a separate submission and is not listed yet.)
+**Install in Claude:** open the [FlyBest plugin](https://claude.ai/directory/manage/plugins/4c82105c-3ebc-4a9b-b2c4-9916f9566836),
+or use **Customize → Plugins** to find FlyBest. Follow Claude's prompts to add it
+and connect the hotel tools. The plugin includes the Skill and remote MCP
+connection; your email sign-in still authorizes access to your own bookings.
 
 ### What a rate looks like with the benefits attached
 
@@ -42,9 +46,10 @@ you book and pay in the hotel's currency.
 
 ## What it is
 
-A remote MCP connector for hotel search and booking. Hotels only. No password: you sign up
-with your e-mail, and your card is entered on a one-time payment page at ai.flybest.org,
-never in the chat.
+A hotel plugin with live tools and a search-and-booking Skill. Hotels only. You
+sign in with your email, and your card is entered on a one-time payment page at
+ai.flybest.org, never in the chat. The MCP service remains available for clients
+that only need the tools.
 
 **Connector URL:** `https://ai.flybest.org/mcp`
 
@@ -113,13 +118,15 @@ benefits apply only to the rate you select and are confirmed by the hotel at boo
 The agency also holds **Four Seasons Preferred Partner**, but those rates are not available
 through this connection: a partner rate shown at a Four Seasons hotel comes through another
 programme, with that programme's own benefits. The advisor arranges Four Seasons Preferred
-Partner bookings directly (flybestorg@gmail.com).
+Partner bookings directly (jay@flybest.org).
 
-**You keep your hotel loyalty.** Add your member number (Marriott Bonvoy, World of Hyatt,
-Hilton Honors, IHG One Rewards, ALL Accor …) and you earn points and elite nights as usual, with
-your status benefits on top of the partner benefits. The assistant asks for it before quoting
-and uses it when it books. Brands without a points programme (Peninsula, Mandarin Oriental,
-Aman and the like) give you the benefits instead of points.
+**Use your own hotel loyalty membership.** Add your member number (Marriott Bonvoy,
+World of Hyatt, Hilton Honors, IHG One Rewards, ALL Accor …) when booking. Points,
+elite-night credit and status benefits depend on the selected rate and the hotel's
+programme rules; they are not guaranteed for every rate. The assistant can quote
+public and partner options before you supply a number, then verifies a selected
+members-only offer with your own number. Brands without a points programme can
+still offer the benefits stated in their selected partner rate.
 
 **Member rates.** At Hilton, Hyatt, IHG and I Prefer (Preferred Hotels) properties, the hotel's own
 member rates appear in the rate list next to the public and partner rates, marked members-only.
@@ -134,7 +141,14 @@ in your name with the hotel, and you can see and cancel it from the assistant.
 ## Connect
 
 ### Claude (claude.ai / Claude Desktop)
-1. Settings → Connectors → **Add custom connector**.
+1. Open the [FlyBest plugin](https://claude.ai/directory/manage/plugins/4c82105c-3ebc-4a9b-b2c4-9916f9566836), or find it under **Customize → Plugins**.
+2. Add the plugin and follow the prompts to connect its hotel tools.
+3. Complete the email-code sign-in when prompted. The Skill and MCP connection
+   are included; no separate server installation or manual URL entry is needed.
+
+For a tools-only connection:
+
+1. In Claude's connector settings, choose **Add custom connector**.
 2. Name: `FlyBest`, URL: `https://ai.flybest.org/mcp`. Save.
 3. Click **Connect**. On the page that opens choose **Sign up with your e-mail**,
    enter your address, type the 6-digit code from the e-mail. Done.
@@ -180,7 +194,10 @@ This repository is also a **Claude plugin bundle**: it references the connector 
 ships the `flybest-hotels` skill, so Claude gets the house rules (what to check before
 booking, how deposits and cancellation terms work, what it must never do) automatically.
 
-Requires Claude Code 2.1.76 or later; the latest version is recommended (`claude update`).
+Use a current Claude Code release. Plugins added to your Claude account can sync
+to Claude Code when you sign in with the same account; account sync requires
+Claude Code 2.1.273 or later. See [Claude's plugin guide](https://support.claude.com/en/articles/13837440-use-plugins-in-claude).
+You can also install this repository directly:
 
 In a terminal:
 
@@ -199,17 +216,12 @@ Or inside a Claude Code session:
 On first use, run `/mcp`, pick the FlyBest server (`plugin:flybest-hotels:flybest`), and authenticate. A browser page opens;
 sign in with an e-mail code.
 
-**Version notes:** Installing requires 2.1.76 or later; 2.1.75 and 2.1.72 (the earlier versions tested) refuse the
-manifest's `displayName` and `privacyPolicyUrl` keys. Installation was tested on
-2.1.76, 2.1.142, 2.1.144, 2.1.145 and 2.1.287. On 2.1.76 and 2.1.287,
-`claude mcp list` shows the server as needing authentication after installation.
-The developer check `claude plugin validate` is separate from installing: it errors
-on `displayName` up to 2.1.142, then on `privacyPolicyUrl` in 2.1.143–2.1.144.
-In 2.1.145–2.1.280 it passes with one warning: "Unknown field 'privacyPolicyUrl'.
-Claude Code ignores it at load time." From 2.1.281 the manifest passes clean; on 2.1.284,
-validating the plugin manifest (`.claude-plugin/plugin.json`) also reports one warning that the maintainer notes file `CLAUDE.md` at the repository root
-is not loaded as plugin context. That is expected: the file is for maintainers, and the skill
-ships separately under `skills/`.
+**Validation and updates:** `claude plugin validate` checks the package; it does
+not install it or complete your hotel-tool authorization. The current Claude
+manifest omits the old `displayName` and `privacyPolicyUrl` keys removed in 1.1.6.
+The maintainer's root `CLAUDE.md` is not plugin context; the customer Skill ships
+under `skills/`. Existing installations need to update the plugin to receive
+changed Skill instructions.
 
 For older Claude Code versions, or if you only want the tools:
 
@@ -220,8 +232,8 @@ claude mcp add --transport http flybest https://ai.flybest.org/mcp
 This connects the server's tools and its own booking rules, without the
 `flybest-hotels` skill. Use `/mcp`, pick `flybest`, and sign in as above.
 
-Once listed in the directory, add it from **Customize → Plugins** in Claude
-(desktop or web).
+The [Claude directory entry](https://claude.ai/directory/manage/plugins/4c82105c-3ebc-4a9b-b2c4-9916f9566836)
+bundles these tools and the Skill for Claude web and desktop.
 
 Using ChatGPT or another client? The connector sends its core booking rules as server
 instructions when you connect (this skill is the fuller version), and you can paste
@@ -242,7 +254,7 @@ payment page and the booking confirmation yourself.
    a copy of the booking. If the same stay's price or terms change before booking,
    the payment page can show the updated terms and ask you to agree again before
    continuing. A different room, date or currency needs a new quote. If the result
-   is unclear, check your trips or e-mail flybestorg@gmail.com with the reference
+   is unclear, check your trips or e-mail jay@flybest.org with the reference
    before trying again; do not create another booking while the first is being checked.
 
 To cancel, the assistant first retrieves a cancellation preview, shows the current
@@ -258,14 +270,14 @@ plain words before you tick; nothing is charged until you do.
 Each public connection allows up to 800 searches, 60 payment links and 60 cancellation
 requests per day (reset at 00:00 UTC), to keep the reservation system fair for everyone. The
 assistant tells you when you hit a limit. If a limit stops you from managing a time-sensitive
-booking, e-mail flybestorg@gmail.com with the booking reference; hotel cancellation deadlines
+booking, e-mail jay@flybest.org with the booking reference; hotel cancellation deadlines
 still apply.
 
 ## Terms, privacy, security
 
 - [Terms of use](https://ai.flybest.org/terms) · [Privacy notice](https://ai.flybest.org/privacy)
 - Bookings, cancellations the assistant could not complete, charges, privacy requests:
-  **flybestorg@gmail.com** with your booking reference (never card details). One advisor,
+  **jay@flybest.org** with your booking reference (never card details). One advisor,
   Pacific time; replies usually within one business day.
 - Found a security problem? See [SECURITY.md](SECURITY.md).
 
@@ -276,7 +288,7 @@ affiliated with Coastline Travel Advisors, a licensed host travel agency. FlyBes
 connector and is responsible for its signup and booking data; hotel bookings are placed through
 Coastline's reservation system on its accreditation. The connector is free to use; you pay only
 the hotel. FlyBest is paid by commission from the hotel; you do not pay more for booking
-through it. Contact: flybestorg@gmail.com.
+through it. Contact: jay@flybest.org.
 
 This repository holds the public documentation and the assistant skill. The connector's
 server code is not published.

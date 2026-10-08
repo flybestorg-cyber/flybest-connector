@@ -21,6 +21,15 @@ of a favourable term.
   A public breakfast/package rate can include what its own terms state; it does
   not acquire another row's partner benefits. Empty benefit text is unverified,
   not proof of no benefits and not permission to copy another row's inclusions.
+- Distinguish a benefits lookup that was not requested or was outside the checked
+  shortlist from a lookup that failed or returned no confirmed inclusions. Before
+  sending an unchecked selected option to the advisor, use the supported
+  `with_perks=true` lookup and a targeted `room_contains` filter where appropriate.
+  If needed, increase `perks_top_n` only within the current schema's limit (at
+  most 10 per programme in the current service); do not fetch every hotel's every
+  row. Preserve a matching public comparator. Match the newly returned selected
+  row by room, party and terms, then use its own current rate key. If benefits
+  remain unavailable, label them unverified and offer advisor confirmation.
 - Group by returned room/product identity and full description. Do not merge
   rows merely because their displayed plan names match. Keep different benefits,
   bed types, deadlines and payment conditions distinguishable. Unknown bed type
