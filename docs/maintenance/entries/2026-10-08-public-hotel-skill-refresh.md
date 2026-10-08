@@ -37,3 +37,9 @@ This changes plugin source and documentation only. No backend code is changed, n
 ## Remaining limits and rollback
 
 The public tools cannot inspect a payment page's live processing status or perform unsupported hotel servicing. The advisor remains the verification path for those cases. No directory reindex or installed-Claude update has been verified by these local checks. Restore the previous Skill, reference, README and plugin manifests to roll back.
+
+## Publication receipt — 2026-10-08 16:08 PDT
+
+This later receipt supersedes the local candidate status above. Source commit `b82e02b81ec2da50432f52dc5b17f4a6babb6fe6` was successfully pushed to [GitHub main](https://github.com/flybestorg-cyber/flybest-connector/commit/b82e02b81ec2da50432f52dc5b17f4a6babb6fe6), and a remote ref read at 23:08:30 UTC confirmed that exact commit. The published source manifests declare plugin version 1.1.7.
+
+Claude Code 2.1.293 also validated the plugin and marketplace. Its plugin check reported only the expected warning that root CLAUDE.md is maintainer context rather than shipped Skill context; the customer instructions are in skills/flybest-hotels/SKILL.md. No backend deployment or service restart occurred. Repository publication does not establish that the Claude directory or an existing installation has ingested version 1.1.7; that needs a separate refresh check.

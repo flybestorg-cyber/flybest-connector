@@ -24,3 +24,4 @@
 ## 2026-10-08 洛杉矶
 
 - [Customer-facing hotel Skill refresh: targeted benefits, booking verification and plugin installation guidance (1.1.7)](entries/2026-10-08-public-hotel-skill-refresh.md)
+- [Publication receipt: source 1.1.7 pushed and GitHub main verified; no backend restart](entries/2026-10-08-public-hotel-skill-refresh.md#publication-receipt--2026-10-08-1608-pdt)
