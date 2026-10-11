@@ -18,8 +18,8 @@ connect to the MCP service directly. Free to use; you pay only the hotel.
 > Keywords: AI travel booking · AI hotel booking · hotel booking agent · travel agent AI ·
 > Claude plugin · hotel Skills · MCP server · Sabre GDS · luxury travel · preferred-partner perks
 
-**Install in Claude:** open the [FlyBest plugin](https://claude.ai/directory/manage/plugins/4c82105c-3ebc-4a9b-b2c4-9916f9566836),
-or use **Customize → Plugins** to find FlyBest. Follow Claude's prompts to add it
+**Install in Claude:** use **Customize → Plugins** and search for FlyBest, or open the
+[FlyBest plugin page](https://claude.ai/directory/manage/plugins/4c82105c-3ebc-4a9b-b2c4-9916f9566836) (sign-in required). Follow Claude's prompts to add it
 and connect the hotel tools. The plugin includes the Skill and remote MCP
 connection; your email sign-in still authorizes access to your own bookings.
 
@@ -121,9 +121,9 @@ programme, with that programme's own benefits. The advisor arranges Four Seasons
 Partner bookings directly (jay@flybest.org).
 
 **Use your own hotel loyalty membership.** Add your member number (Marriott Bonvoy,
-World of Hyatt, Hilton Honors, IHG One Rewards, ALL Accor …) when booking. Points,
-elite-night credit and status benefits depend on the selected rate and the hotel's
-programme rules; they are not guaranteed for every rate. The assistant can quote
+World of Hyatt, Hilton Honors, IHG One Rewards, ALL Accor …) when booking. Points and
+elite nights are credited as usual, and your status benefits apply on top of the
+partner benefits. The assistant can quote
 public and partner options before you supply a number, then verifies a selected
 members-only offer with your own number. Brands without a points programme can
 still offer the benefits stated in their selected partner rate.
@@ -141,7 +141,7 @@ in your name with the hotel, and you can see and cancel it from the assistant.
 ## Connect
 
 ### Claude (claude.ai / Claude Desktop)
-1. Open the [FlyBest plugin](https://claude.ai/directory/manage/plugins/4c82105c-3ebc-4a9b-b2c4-9916f9566836), or find it under **Customize → Plugins**.
+1. In Claude, open **Customize → Plugins** and search for FlyBest (direct page, sign-in required: [FlyBest plugin](https://claude.ai/directory/manage/plugins/4c82105c-3ebc-4a9b-b2c4-9916f9566836)).
 2. Add the plugin and follow the prompts to connect its hotel tools.
 3. Complete the email-code sign-in when prompted. The Skill and MCP connection
    are included; no separate server installation or manual URL entry is needed.
