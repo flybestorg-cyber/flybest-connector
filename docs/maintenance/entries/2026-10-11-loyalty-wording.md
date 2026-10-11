@@ -37,3 +37,7 @@ JSON manifests parse; the two plugin versions match; no internal paths, secrets 
 ## Remaining limits
 
 Directory re-indexing and installed-client updates happen on the directory side and are not proven by this record.
+
+## Publication receipt — 2026-10-11
+
+Commit `922eedb` was pushed to GitHub main; the remote head was verified to match. The matching service release (per-row benefit-lookup status lines, plain loyalty wording in the server instructions) went live the same day at 13:07 UTC. Directory refresh and installed-client uptake are not verified here.
