@@ -19,7 +19,7 @@ connect to the MCP service directly. Free to use; you pay only the hotel.
 > Claude plugin · hotel Skills · MCP server · Sabre GDS · luxury travel · preferred-partner perks
 
 **Install in Claude:** use **Customize → Plugins** and search for FlyBest, or open the
-[FlyBest plugin page](https://claude.ai/directory/manage/plugins/4c82105c-3ebc-4a9b-b2c4-9916f9566836) (sign-in required). Follow Claude's prompts to add it
+[FlyBest plugin page](https://claude.ai/customize/plugins/id/4c82105c-3ebc-4a9b-b2c4-9916f9566836%40anthropic-plugin-directory) (sign-in required). Follow Claude's prompts to add it
 and connect the hotel tools. The plugin includes the Skill and remote MCP
 connection; your email sign-in still authorizes access to your own bookings.
 
@@ -141,7 +141,7 @@ in your name with the hotel, and you can see and cancel it from the assistant.
 ## Connect
 
 ### Claude (claude.ai / Claude Desktop)
-1. In Claude, open **Customize → Plugins** and search for FlyBest (direct page, sign-in required: [FlyBest plugin](https://claude.ai/directory/manage/plugins/4c82105c-3ebc-4a9b-b2c4-9916f9566836)).
+1. In Claude, open **Customize → Plugins** and search for FlyBest (direct page, sign-in required: [FlyBest plugin](https://claude.ai/customize/plugins/id/4c82105c-3ebc-4a9b-b2c4-9916f9566836%40anthropic-plugin-directory)).
 2. Add the plugin and follow the prompts to connect its hotel tools.
 3. Complete the email-code sign-in when prompted. The Skill and MCP connection
    are included; no separate server installation or manual URL entry is needed.
@@ -232,7 +232,7 @@ claude mcp add --transport http flybest https://ai.flybest.org/mcp
 This connects the server's tools and its own booking rules, without the
 `flybest-hotels` skill. Use `/mcp`, pick `flybest`, and sign in as above.
 
-The [Claude directory entry](https://claude.ai/directory/manage/plugins/4c82105c-3ebc-4a9b-b2c4-9916f9566836)
+The [Claude directory entry](https://claude.ai/customize/plugins/id/4c82105c-3ebc-4a9b-b2c4-9916f9566836%40anthropic-plugin-directory)
 bundles these tools and the Skill for Claude web and desktop.
 
 Using ChatGPT or another client? The connector sends its core booking rules as server

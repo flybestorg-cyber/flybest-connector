@@ -31,3 +31,7 @@
 
 - [Loyalty wording restored (points and elite nights credited as usual; status benefits on top), per-row benefit-lookup status lines, install link wording (1.1.8)](entries/2026-10-11-loyalty-wording.md)
 - Template: added a length target (body about 12 KB; full test inventories and raw logs stay out of records), matching the other two repositories.
+
+## 2026-10-13 洛杉矶
+
+- [README 安装链接从发布者管理页改为公开安装页（三处）](entries/2026-10-13-plugin-install-link.md)
