@@ -221,7 +221,7 @@ not install it or complete your hotel-tool authorization. The current Claude
 manifest omits the old `displayName` and `privacyPolicyUrl` keys removed in 1.1.6.
 The maintainer's root `CLAUDE.md` is not plugin context; the customer Skill ships
 under `skills/`. Existing installations need to update the plugin to receive
-changed Skill instructions.
+changed Skill instructions (see [Updating](#updating)).
 
 For older Claude Code versions, or if you only want the tools:
 
@@ -240,6 +240,25 @@ instructions when you connect (this skill is the fuller version), and you can pa
 `skills/flybest-hotels/SKILL.md` together with its linked
 `references/quote-integrity.md` into a project or custom instructions. Either way, check the
 payment page and the booking confirmation yourself.
+
+## Updating
+
+- **Claude web and desktop (installed from the Claude directory):** nothing to do. Once a new
+  version is published to the directory, existing installs update automatically.
+- **Claude Code, installed from this GitHub marketplace:** Claude Code does not auto-update a
+  marketplace you added yourself unless you turn it on. Do it once: `/plugin` → **Marketplaces**
+  → `flybest` → **Enable auto-update**. Or update by hand:
+
+  ```bash
+  claude plugin marketplace update flybest
+  claude plugin update flybest-hotels@flybest
+  ```
+
+  Then run `/reload-plugins` in an open session (or restart Claude Code) so the new Skill text
+  is loaded.
+- **Tools-only connections** (`claude mcp add`, a custom connector, ChatGPT): the tools and
+  their server instructions come from the server, so there is nothing to install. If your
+  client caches tool definitions, refresh or reconnect to pick up changes.
 
 ## How booking works
 
