@@ -1,7 +1,7 @@
 # Reporting a security issue
 
 Report suspected vulnerabilities in the FlyBest connector (`ai.flybest.org`), its sign-up
-flow or its payment pages to **flybestorg@gmail.com** with "SECURITY" in the subject. We aim
+flow or its payment pages to **jay@flybest.org** with "SECURITY" in the subject. We aim
 to acknowledge reports within three business days.
 
 Welcome: authentication or authorization bypasses, cross-user access to bookings, weaknesses

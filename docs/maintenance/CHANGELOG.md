@@ -41,3 +41,5 @@
 
 - [README 增加 “Updating”：目录安装自动更新；GitHub marketplace 安装在 Claude Code 里打开自动更新或手动 update 后 `/reload-plugins`。Skill 复查无需改动，版本仍为 1.1.8](entries/2026-10-14-readme-updating.md)
 - 推送回执：`9525aa2` 已于 2026-10-14 推送到 GitHub main，ls-remote 一致。
+
+- [Checkout continuation, payment-timing advisories, family quote expiry, page limits and security contact (1.1.9, prepared)](entries/2026-10-14-checkout-guidance.md)
