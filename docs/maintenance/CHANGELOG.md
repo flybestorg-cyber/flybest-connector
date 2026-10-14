@@ -41,3 +41,4 @@
 
 - [README 增加 “Updating”：目录安装自动更新；GitHub marketplace 安装在 Claude Code 里打开自动更新或手动 update 后 `/reload-plugins`。Skill 复查无需改动，版本仍为 1.1.8](entries/2026-10-14-readme-updating.md)
 - 推送回执：`9525aa2` 已于 2026-10-14 推送到 GitHub main，ls-remote 一致。
+- [Skill/README 1.1.9：付款链接邮箱可选（不给就用注册邮箱，付款人在页面确认或修改）；“价格变了”分已有页面重新同意与铸链被拒没有页面两种情况；付款页约 10 分钟、结果给关闭时间、关了没订没扣马上重开](entries/2026-10-14-booking-wording-1-1-9.md)

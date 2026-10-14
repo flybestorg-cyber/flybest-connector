@@ -262,17 +262,23 @@ payment page and the booking confirmation yourself.
 
 ## How booking works
 
-1. The assistant asks the connector for a **payment page** for the room you chose.
+1. The assistant asks the connector for a **payment page** for the room you chose. The
+   confirmation goes to the e-mail you signed up with unless you give another one; you can
+   change it on the page.
 2. You open the page, read the price, deposit and cancellation terms written out in
    full, **tick the box**, and enter your card. You enter the card only on that page,
    operated by FlyBest at ai.flybest.org; the details are sent to the hotel reservation
    system (Sabre) to make the booking. FlyBest keeps the last four digits, the terms you
    ticked and when you ticked them. Card details are never part of what the assistant
-   sends or receives, so never type them in the chat.
+   sends or receives, so never type them in the chat. The page is open for about ten
+   minutes and the assistant gives you the closing time; if it closes before you pay,
+   nothing is booked or charged, and the assistant can make a new one.
 3. The hotel confirms; you get a confirmation number in the chat and the agency gets
    a copy of the booking. If the same stay's price or terms change before booking,
    the payment page can show the updated terms and ask you to agree again before
-   continuing. A different room, date or currency needs a new quote. If the result
+   continuing. If the price changed before a page could be made, the assistant shows the
+   new price and makes the page once you agree. A different room, date or currency needs
+   a new quote. If the result
    is unclear, check your trips or e-mail jay@flybest.org with the reference
    before trying again; do not create another booking while the first is being checked.
 

@@ -1,7 +1,7 @@
 {
   "identifier": "flybest-travel-hotels",
   "name": "FlyBest Travel — Hotel Booking with Advisor Benefits",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "Live hotel tools and search-and-booking Skills: compare actual rates, rooms, advisor benefits and cancellation terms, then book through a secure payment page. Hotel loyalty points and elite nights are credited as usual. Hotels only, free to use.",
   "cloudEndpoint": "https://ai.flybest.org/mcp",
   "homepage": "https://flybest.org/en/ai/",
