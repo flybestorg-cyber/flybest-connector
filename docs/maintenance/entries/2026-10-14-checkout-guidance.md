@@ -22,3 +22,7 @@ Base 4c96779b0276a620645cc40874e5bde7a13bd205. Changes are on fix/codex-review-r
 ## Follow-up to earlier wording
 
 The 2026-10-14 updating note's statement that the Skill needed no changes was about that earlier review. This later checkout review found the above guidance gaps; the old record is preserved as history.
+
+## Repository delivery receipt
+
+Implementation committed locally as 6a3e857. Remote publication was attempted but not completed because write access is unavailable in this workspace. The branch and an exportable patch are retained. No default branch, published plugin or live service was changed.
