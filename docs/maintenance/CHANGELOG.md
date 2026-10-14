@@ -43,3 +43,4 @@
 - 推送回执：`9525aa2` 已于 2026-10-14 推送到 GitHub main，ls-remote 一致。
 
 - [Checkout continuation, payment-timing advisories, family quote expiry, page limits and security contact (1.1.9, prepared)](entries/2026-10-14-checkout-guidance.md)
+- [Push follow-up: repair branch pushed and remote commit verified; no merge or plugin publication](entries/2026-10-14-checkout-guidance.md#push-follow-up--2026-10-14)

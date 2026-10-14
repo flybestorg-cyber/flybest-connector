@@ -26,3 +26,7 @@ The 2026-10-14 updating note's statement that the Skill needed no changes was ab
 ## Repository delivery receipt
 
 Implementation committed locally as 6a3e857. Remote publication was attempted but not completed because write access is unavailable in this workspace. The branch and an exportable patch are retained. No default branch, published plugin or live service was changed.
+
+## Push follow-up — 2026-10-14
+
+The earlier write-access block is resolved. Commits 6a3e857 and 1825a1c were pushed to GitHub on fix/codex-review-repairs-20261014 using an authenticated maintainer session. A remote branch readback returned 1825a1c6c62d6dc94def7875eb277122bc1b8808, matching the transferred branch exactly. This follow-up only updates the delivery record and change log. The default branch is unchanged; plugin 1.1.9 remains prepared, not published, and no live service was deployed.
