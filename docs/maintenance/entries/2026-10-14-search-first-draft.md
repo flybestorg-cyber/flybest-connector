@@ -6,6 +6,10 @@
 - Related records consulted: [2026-10-07-hotel-skills-conversion](2026-10-07-hotel-skills-conversion.md) (priced recommendations in the same answer), [2026-10-08-public-hotel-skill-refresh](2026-10-08-public-hotel-skill-refresh.md), [2026-10-11-loyalty-wording](2026-10-11-loyalty-wording.md) (membership wording), [2026-10-14-booking-wording-1-1-9](2026-10-14-booking-wording-1-1-9.md) (current skill and versions). Server-side counterpart: the private booking-service record `2026-10-14-public-search-first` on the branch named above (public profile only: dates optional on `sabre_hotel_search`, sample-dates search, rewritten server instructions).
 - Affected files: `skills/flybest-hotels/SKILL.md`, `.claude-plugin/plugin.json`, `lhm.plugin.json`. `server.json` (MCP Registry entry, 1.0.2) is unchanged: the endpoint and the tool set are the same.
 
+## Owner's decision — 2026-10-14
+
+The owner decided that the search-first change ships only after the OpenAI app review passes. Until then this branch stays a local commit: not pushed, not published in the Claude directory. The server branch of the same name is held the same way. At release, both branches are rebased onto their then-current main lines, the offline checks are run again, and they go out together (server first, then this plugin).
+
 ## Problem and cause
 
 Travellers connect the hotel connector but rarely get a search. In offline tests against the public tool surface, casual first questions ("hotels in Tokyo", "东京有什么好酒店推荐？" and four others, two models, 18 runs) never called the search tool; every answer was a questionnaire of four to six items. Questions that already carried dates and a party searched straight away. Two causes on our side: the public search required check-in and check-out dates, and the instructions said to collect dates, party, beds, plans and membership before searching.
