@@ -87,3 +87,10 @@ No further wording change was made in this round: the remaining deviations are a
 ## Review round 4 — 2026-10-15
 
 A narrow follow-up review of the round-3 changes returned "ready" with no findings; the record's re-test figures and listed deviations match the raw outputs. Still a local draft, held until the OpenAI app review passes; released together with the server branch, server first.
+
+## Publication receipt — 2026-10-15 03:2x UTC (2026-10-14 PDT)
+
+- **Approval.** The owner approved shipping on 2026-10-15, before the ChatGPT app review finished. This replaces the hold recorded above. The changed public search definition and server instructions become a held update in that review.
+- **Merged and pushed.** `draft/public-search-first-2026-10-14` (4e83a5b, four review rounds with 10, 6, 3 and 0 findings) was merged into main with `--no-ff` as `e625609` and pushed to GitHub main; the remote ref matches. Version 1.1.10 in both manifests.
+- **Matching service release.** The booking service release with the same behaviour went live at 03:10 UTC: on public connections the hotel search takes dates as optional and searches a labelled sample stay, and the server instructions ask one line for dates and party. Its tests include the cross-repository contract test against this 1.1.10 skill, which passed.
+- **Directory status.** Pushing to GitHub does not by itself prove that the Claude directory serves 1.1.10. The owner confirms it on the plugin's directory management page and publishes the new version there if it is waiting. Installed copies then update on the directory side. Claude Code users who added the GitHub marketplace update as described in the README.
