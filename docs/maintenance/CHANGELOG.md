@@ -43,3 +43,4 @@
 - 推送回执：`9525aa2` 已于 2026-10-14 推送到 GitHub main，ls-remote 一致。
 - [Skill/README 1.1.9：付款链接邮箱可选（不给就用注册邮箱，付款人在页面确认或修改）；“价格变了”分已有页面重新同意与铸链被拒没有页面两种情况；付款页约 10 分钟、结果给关闭时间、关了没订没扣马上重开](entries/2026-10-14-booking-wording-1-1-9.md)
 - [Skill 1.1.10 “先搜再问”（draft, not published; held with sabre-booking draft/public-search-first-2026-10-14）：任何问酒店/住哪/房价/有没有房当轮就搜，没日期用服务端样例日期并在首行说明；样例结果只用一行问日期和人数，床型/行程/会员等真实日期的第一批报价；样例日期不取 rates、不报总价、不开付款页；description 加“什么时候用”和中文触发词。只能和服务端草稿一起上线](entries/2026-10-14-search-first-draft.md)
+- [Review round 1 fixes for the 1.1.10 draft (still draft, not published): sample-answer order with one dates-and-party question and a closing statement, rate lookups only on the traveller's own dates, children/month/priority wording, search-first scope; correction of the earlier 12/12 second-turn claim](entries/2026-10-14-search-first-draft.md#review-round-1-and-fixes--2026-10-15-still-a-draft-not-pushed-not-published)
