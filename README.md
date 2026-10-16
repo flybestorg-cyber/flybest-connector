@@ -128,12 +128,13 @@ public and partner options before you supply a number, then verifies a selected
 members-only offer with your own number. Brands without a points programme can
 still offer the benefits stated in their selected partner rate.
 
-**Member rates.** At Hilton, Hyatt, IHG and I Prefer (Preferred Hotels) properties, the hotel's own
-member rates appear in the rate list next to the public and partner rates, marked members-only.
-They book with your own member number: the assistant searches that hotel again with it, and a rate
-found with your number books only with that number. No member discount is guaranteed, and Marriott
-member rates are not available through this connection. Joining Hilton Honors, World of Hyatt or
-IHG One Rewards is free.
+**Member rates.** At Hilton, Hyatt, IHG, I Prefer (Preferred Hotels) and Marriott properties, the
+hotel's own member rates appear in the rate list next to the public and partner rates, marked
+members-only. Marriott Bonvoy member rates come back at some Marriott hotels, not all (about 2%
+under the public rate where measured). They book with your own member number: the assistant
+searches that hotel again with it, and a rate found with your number books only with that number.
+No member discount is guaranteed. Joining Hilton Honors, World of Hyatt, IHG One Rewards or
+Marriott Bonvoy is free.
 
 Plus: a licensed agency behind every booking (Coastline Travel Advisors), the booking is
 in your name with the hotel, and you can see and cancel it from the assistant.

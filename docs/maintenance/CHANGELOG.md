@@ -47,3 +47,7 @@
 - [Review round 2 for the 1.1.10 draft (still draft, not published): correction of the round-1 hand-check claim; sample sentence before any itinerary, ask only what is missing, no destination question, no-prices case; stricter re-test 23/24 sample-first, 0/24 booking questions, 0/24 sample-date rate lookups](entries/2026-10-14-search-first-draft.md#review-round-2-and-fixes--2026-10-15-still-a-draft-not-pushed-not-published)
 - [Review round 3 for the 1.1.10 draft (record only): round-2 scores restated as automated-check passes (10/12 with the skill, 10/12 server only) with the known ordering deviations listed; no further wording change](entries/2026-10-14-search-first-draft.md#review-round-3--2026-10-15-still-a-draft-not-pushed-not-published)
 - [1.1.10 publication receipt: merged as e625609 and pushed to GitHub main; matching service release live 2026-10-15 03:10 UTC; shipped before the ChatGPT app review finished (held update there); Claude directory publication to be confirmed by the owner](entries/2026-10-14-search-first-draft.md#publication-receipt--2026-10-15-032x-utc-2026-10-14-pdt)
+
+## 2026-10-16 洛杉矶
+
+- [Skill/README 1.1.11: Marriott Bonvoy member rates now come back at some Marriott hotels (about 2% under the public rate where measured), marked members-only; the assistant searches again with the traveller's number like at Hilton/Hyatt/IHG/I Prefer; "not available through this connection" removed. Local commit, not pushed, not published; ships with booking-service record 2026-10-16-marriott-y47](entries/2026-10-16-marriott-member-rates.md)
