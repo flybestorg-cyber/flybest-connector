@@ -51,3 +51,4 @@
 ## 2026-10-16 洛杉矶
 
 - [Skill/README 1.1.11: Marriott Bonvoy member rates now come back at some Marriott hotels (about 2% under the public rate where measured), marked members-only; the assistant searches again with the traveller's number like at Hilton/Hyatt/IHG/I Prefer; "not available through this connection" removed. Local commit, not pushed, not published; ships with booking-service record 2026-10-16-marriott-y47](entries/2026-10-16-marriott-member-rates.md)
+- 推送回执：`540b9ca` 已于 2026-10-16 推送到 GitHub main（1.1.11），ls-remote 一致；对应服务 8f0f717 已于 04:16Z 上线。
