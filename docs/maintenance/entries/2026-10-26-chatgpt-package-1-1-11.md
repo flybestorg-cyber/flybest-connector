@@ -26,3 +26,7 @@ Starting from the published 1.1.8 release ZIP (downloaded by the owner from the 
 ## Remaining limits
 
 The four changed MCP tools and the server instructions still show the definitions captured on 2026-10-09; continuous review has not reported a finished scan since the scanner reconnected on 2026-10-26.
+
+## Review receipt — 2026-10-26
+
+Skill checks passed (no findings on metadata or skills). With the owner's explicit go-ahead the draft was submitted for review at about 20:35 UTC, the six standard attestations ticked on the owner's confirmation, and a private note told the reviewers that this version changes only the bundled skill while the MCP updates are in continuous review. The portal showed "1.1.11 · Approved" and "Ready to publish" within minutes. Publishing is left to the owner; the live version stays 1.1.8 until then.

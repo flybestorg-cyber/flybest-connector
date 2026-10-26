@@ -54,3 +54,4 @@
 - 推送回执：`540b9ca` 已于 2026-10-16 推送到 GitHub main（1.1.11），ls-remote 一致；对应服务 8f0f717 已于 04:16Z 上线。
 - [README：ChatGPT 插件 2026-10-26 已上架，开头与 Connect 一节直接指向插件页；说明 ChatGPT 带同一套实时酒店工具、Skills 只给 Claude；开发者模式自建连接器改为备选；插件包与版本不变](entries/2026-10-26-chatgpt-plugin-published.md)
 - [ChatGPT plugin package 1.1.11 draft built from the published 1.1.8 ZIP: skill = repo 1.1.11 with the one client-neutral line, version and release notes; uploaded as draft, not yet submitted](entries/2026-10-26-chatgpt-package-1-1-11.md)
+- [ChatGPT package 1.1.11: submitted for review on the owner's go-ahead and approved the same day; Ready to publish, publication left to the owner](entries/2026-10-26-chatgpt-package-1-1-11.md)
