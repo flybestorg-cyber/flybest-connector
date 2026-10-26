@@ -23,6 +23,9 @@ connect to the MCP service directly. Free to use; you pay only the hotel.
 and connect the hotel tools. The plugin includes the Skill and remote MCP
 connection; your email sign-in still authorizes access to your own bookings.
 
+**Use in ChatGPT:** add the [FlyBest plugin in ChatGPT](https://chatgpt.com/plugins/plugin_asdk_app_6abb17191de48191bc015ca8139bcb30) and sign in with your
+email code. It carries the same live hotel tools; the Skills are for Claude.
+
 ### What a rate looks like with the benefits attached
 
 Illustrative example, not a live quote:
@@ -154,17 +157,15 @@ For a tools-only connection:
 3. Click **Connect**. On the page that opens choose **Sign up with your e-mail**,
    enter your address, type the 6-digit code from the e-mail. Done.
 
-### ChatGPT (web, developer mode)
-1. Where your account and workspace permit it, open Settings → Apps → Advanced Settings → **Developer mode**. Workspace administrators may need to enable access first.
-2. From Settings → Apps → **Create**, enter URL `https://ai.flybest.org/mcp`, authentication: OAuth, and complete the tool scan and connection.
-3. Same e-mail sign-in page as above.
+### ChatGPT
+The FlyBest plugin is published in ChatGPT (2026-10-26, after OpenAI's review):
+**[FlyBest in ChatGPT](https://chatgpt.com/plugins/plugin_asdk_app_6abb17191de48191bc015ca8139bcb30)**. Add it, then sign in on the same e-mail page as above.
 
-ChatGPT support is experimental: custom connectors are a ChatGPT web feature (developer mode),
-availability depends on your account and workspace settings, and FlyBest has not yet completed
-end-to-end testing on a real ChatGPT account. The mobile apps are not verified.
-Read OpenAI's [current developer-mode and MCP app instructions](https://help.openai.com/en/articles/12584461-developer-mode-and-mcp-apps-in-chatgpt)
-for account eligibility, workspace permissions and support for booking/cancellation actions.
-An administrator may need to refresh and approve updated tool definitions after a connector update.
+The ChatGPT plugin carries the same live hotel tools and server instructions as the Claude
+connector; the Skills in this repository are for Claude. FlyBest has not verified the ChatGPT
+mobile apps. A workspace can instead add the server as a developer-mode custom connector
+(Settings → Apps → **Create**, URL `https://ai.flybest.org/mcp`, OAuth) where its settings allow it;
+see OpenAI's [developer-mode and MCP app instructions](https://help.openai.com/en/articles/12584461-developer-mode-and-mcp-apps-in-chatgpt).
 
 ### Other MCP clients
 Any client that speaks Streamable HTTP with OAuth 2.1 (dynamic client registration
@@ -257,7 +258,7 @@ payment page and the booking confirmation yourself.
 
   Then run `/reload-plugins` in an open session (or restart Claude Code) so the new Skill text
   is loaded.
-- **Tools-only connections** (`claude mcp add`, a custom connector, ChatGPT): the tools and
+- **ChatGPT plugin and tools-only connections** (`claude mcp add`, a custom connector): the tools and
   their server instructions come from the server, so there is nothing to install. If your
   client caches tool definitions, refresh or reconnect to pick up changes.
 
