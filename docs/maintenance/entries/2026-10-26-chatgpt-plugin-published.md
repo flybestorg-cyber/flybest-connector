@@ -21,7 +21,7 @@ FlyBest 的 ChatGPT 插件于 2026-10-26 通过 OpenAI 审核并发布。README 
 
 ## 版本与发布状态
 - 相关代码提交或 PR：见本条记录的 Git 提交。
-- GitHub 推送状态：推送后补记。
+- GitHub 推送状态：`ebee226` 已于 2026-10-26 推送到 GitHub main，ls-remote 一致。
 - 网站同步：flybest.org 同日加上同一链接（服务端仓库记录 2026-10-26-chatgpt-plugin-link）。
 
 ## 剩余边界与后续事项
