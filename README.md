@@ -24,7 +24,7 @@ and connect the hotel tools. The plugin includes the Skill and remote MCP
 connection; your email sign-in still authorizes access to your own bookings.
 
 **Use in ChatGPT:** add the [FlyBest plugin in ChatGPT](https://chatgpt.com/plugins/plugin_asdk_app_6abb17191de48191bc015ca8139bcb30) and sign in with your
-email code. It carries the same live hotel tools; the Skills are for Claude.
+email code. It carries the same live hotel tools and bundles the same `flybest-hotels` Skill.
 
 ### What a rate looks like with the benefits attached
 
@@ -162,7 +162,9 @@ The FlyBest plugin is published in ChatGPT (2026-10-26, after OpenAI's review):
 **[FlyBest in ChatGPT](https://chatgpt.com/plugins/plugin_asdk_app_6abb17191de48191bc015ca8139bcb30)**. Add it, then sign in on the same e-mail page as above.
 
 The ChatGPT plugin carries the same live hotel tools and server instructions as the Claude
-connector; the Skills in this repository are for Claude. FlyBest has not verified the ChatGPT
+connector and bundles this repository's `flybest-hotels` Skill. A Skill change reaches ChatGPT
+with the next plugin version OpenAI has reviewed, so the ChatGPT copy can be a version behind
+this repository. FlyBest has not verified the ChatGPT
 mobile apps. A workspace can instead add the server as a developer-mode custom connector
 (Settings → Apps → **Create**, URL `https://ai.flybest.org/mcp`, OAuth) where its settings allow it;
 see OpenAI's [developer-mode and MCP app instructions](https://help.openai.com/en/articles/12584461-developer-mode-and-mcp-apps-in-chatgpt).
@@ -237,9 +239,9 @@ This connects the server's tools and its own booking rules, without the
 The [Claude directory entry](https://claude.ai/customize/plugins/id/4c82105c-3ebc-4a9b-b2c4-9916f9566836%40anthropic-plugin-directory)
 bundles these tools and the Skill for Claude web and desktop.
 
-Using ChatGPT or another client? The connector sends its core booking rules as server
-instructions when you connect (this skill is the fuller version), and you can paste
-`skills/flybest-hotels/SKILL.md` together with its linked
+The ChatGPT plugin already bundles the same Skill. Using another client? The connector sends
+its core booking rules as server instructions when you connect (this skill is the fuller
+version), and you can paste `skills/flybest-hotels/SKILL.md` together with its linked
 `references/quote-integrity.md` into a project or custom instructions. Either way, check the
 payment page and the booking confirmation yourself.
 
@@ -260,7 +262,8 @@ payment page and the booking confirmation yourself.
   is loaded.
 - **ChatGPT plugin and tools-only connections** (`claude mcp add`, a custom connector): the tools and
   their server instructions come from the server, so there is nothing to install. If your
-  client caches tool definitions, refresh or reconnect to pick up changes.
+  client caches tool definitions, refresh or reconnect to pick up changes. The ChatGPT plugin's
+  bundled Skill changes when FlyBest publishes a new reviewed plugin version.
 
 ## How booking works
 
