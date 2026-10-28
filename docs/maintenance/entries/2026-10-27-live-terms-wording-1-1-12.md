@@ -51,3 +51,9 @@ Building the ZIP, uploading the draft and submitting it for review are left to t
 ## Remaining limits
 
 The skill can only describe what the tools return; it cannot make a client relay the charge line. The ChatGPT copy stays at its published version until the owner submits a new package and OpenAI approves it.
+
+## Release receipt (2026-10-27, 18:12 PDT)
+
+- Pushed `881f5e9` to `origin/main` (fast-forward from `feb9645`); `origin/main:.claude-plugin/plugin.json` reads 1.1.12. The "not pushed" line above is the pre-release snapshot.
+- The service side went live the same evening as sabre-booking `63463c0` (record `2026-10-27-review-fix-batch2-integration` in that repository).
+- Still the owner's steps: publish 1.1.12 in the Claude plugin portal if it does not pick up the push by itself, and submit the prepared ChatGPT 1.1.12 package.

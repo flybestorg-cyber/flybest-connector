@@ -59,3 +59,4 @@
 ## 2026-10-27 (Los Angeles)
 
 - [Skill/README 1.1.12: the "may charge the card at booking" line comes from the rate's live terms and is passed on before sharing a link (deposit/non-refundable flags not needed); after booking, `my_trips`/`my_trip` are checked only for what they return and the total and cancellation terms are the ones accepted on the payment page; README says the ChatGPT plugin bundles the same Skill; next ChatGPT package prepared, not built or uploaded. Local commit, not pushed; ships with booking-service record 2026-10-27-review-fix-g6-tool-text](entries/2026-10-27-live-terms-wording-1-1-12.md)
+- 2026-10-27 release receipt: `881f5e9` pushed to main (1.1.12); see [2026-10-27-live-terms-wording-1-1-12](entries/2026-10-27-live-terms-wording-1-1-12.md).
