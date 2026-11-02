@@ -64,3 +64,4 @@
 ## 2026-11-02 (Los Angeles)
 
 - [Skill/README 1.1.13: when the FlyBest tools are missing from the chat, the Skill gives the one-time Connect + e-mail-code sign-in step instead of "start a new chat"; README no longer assumes Claude prompts for the sign-in](entries/2026-11-02-plugin-connector-signin-1-1-13.md)
+- [Skill 1.1.14: while FlyBest is not signed in, every hotel or travel reply starts with a reminder to connect and sign in, and no hotel prices of any kind are given before sign-in; unrelated chats are unaffected](entries/2026-11-02-signin-reminder-1-1-14.md)
