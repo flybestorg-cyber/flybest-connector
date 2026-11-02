@@ -41,6 +41,7 @@ A traveller whose FlyBest connection was never signed in now gets the exact plac
 - GitHub push: pending at the time of writing; receipt to be appended.
 - Claude directory: confirm 1.1.13 is serving after the push; publish manually from the management page only if the automatic pickup does not; receipt to be appended.
 - No service restart or backend deployment.
+- Release receipt (checked 2026-11-02, 15:05 PST): `1f3ec21` (1.1.13) was pushed to `origin/main`, but the Claude directory never listed it as a version: the next push (`3643b55`, 1.1.14) arrived before pickup and only that commit was scanned. 1.1.14 carries every 1.1.13 change and has been live since 13:48 PST; see [2026-11-02-signin-reminder-1-1-14](2026-11-02-signin-reminder-1-1-14.md). No manual publish was needed.
 
 ## Remaining limits
 

@@ -34,6 +34,7 @@ Claude Code (current release) in a fresh profile with this plugin loaded from th
 
 - Commit: see this record's Git commit. GitHub push and Claude directory receipt to be appended; the directory auto-publishes versions that pass its scan.
 - No service restart or backend deployment.
+- Release receipt (checked 2026-11-02, 15:05 PST, in the Claude plugin management page, Versions tab): `3643b55` was pushed to `origin/main`; the directory received it at 13:46 PST, fetched 33 files, the security scan passed (13:47) and auto-publish made v1.1.14 · `3643b55` **Serving / Live now since 13:48 PST**. Validation notes and directory-policy warnings are the same standing ones as v1.1.12 ("no new findings, none fixed"): no privacyPolicyUrl, icon.png passed without a code check, a maintenance Markdown file flagged as an image/font, the connector's credential use, root CLAUDE.md not loaded. No reviewer action was needed.
 
 ## Remaining limits
 
