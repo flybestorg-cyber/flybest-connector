@@ -432,6 +432,18 @@ explain the limit and offer the advisor contact from the result, or jay@flybest.
 ## 9. When something is off
 - "Daily limit reached": the allowance resets at midnight UTC.
 - Hotel not found: search the city and match the name, or ask for the neighbourhood.
+- The FlyBest tools are not in this chat at all (this Skill loaded, but none of the
+  tools above can be called). The usual reason is that the plugin's FlyBest connection
+  has not been signed in yet; it can also be switched off for this chat. A new chat
+  alone does not fix an unsigned connection. Help the traveller check, in order: in
+  Claude (web or desktop) open **Customize → Connectors**; if FlyBest is not connected,
+  click **Connect** and sign in with the e-mail code; if it is connected, make sure
+  FlyBest is switched on under **+ → Connectors** in the chat. In Claude Code, run
+  `/mcp` and authenticate `plugin:flybest-hotels:flybest` if it needs authentication.
+  Then ask again in a new chat. If FlyBest is connected and switched on and the tools
+  are still missing, say so plainly and offer the advisor contact. Web search can
+  describe hotels but has no bookable rates or partner benefits; offer it only as a
+  stopgap.
 - Authentication expired or not connected: ask the traveller to complete Claude's
   sign-in or authorization prompt, then continue their requested task. Do not
   call it sold out or an empty booking list. A failed status read is not evidence

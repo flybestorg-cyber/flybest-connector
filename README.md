@@ -146,8 +146,11 @@ in your name with the hotel, and you can see and cancel it from the assistant.
 
 ### Claude (claude.ai / Claude Desktop)
 1. In Claude, open **Customize → Plugins** and search for FlyBest (direct page, sign-in required: [FlyBest plugin](https://claude.ai/customize/plugins/id/4c82105c-3ebc-4a9b-b2c4-9916f9566836%40anthropic-plugin-directory)).
-2. Add the plugin and follow the prompts to connect its hotel tools.
-3. Complete the email-code sign-in when prompted. The Skill and MCP connection
+2. Add the plugin, then make sure its FlyBest connector is connected: in
+   **Customize → Connectors**, click **Connect** on FlyBest if it is not connected yet
+   (the plugin page lists it under **Contents → Connectors**). Until it is connected, the
+   `/flybest-hotels` Skill loads but the hotel tools are missing from the chat.
+3. Complete the e-mail-code sign-in on the page that opens. The Skill and MCP connection
    are included; no separate server installation or manual URL entry is needed.
 
 For a tools-only connection:
@@ -218,7 +221,9 @@ Or inside a Claude Code session:
 ```
 
 On first use, run `/mcp`, pick the FlyBest server (`plugin:flybest-hotels:flybest`), and authenticate. A browser page opens;
-sign in with an e-mail code.
+sign in with an e-mail code. If `claude mcp list` or `/mcp` shows the server as needing
+authentication (also when the plugin arrived through account sync), the hotel tools stay
+unavailable until you complete this sign-in.
 
 **Validation and updates:** `claude plugin validate` checks the package; it does
 not install it or complete your hotel-tool authorization. The current Claude
