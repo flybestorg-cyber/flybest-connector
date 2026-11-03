@@ -68,3 +68,4 @@
 - 2026-11-02 release receipt: Claude directory serves v1.1.14 · `3643b55` since 13:48 PST (scan passed, auto-published; 1.1.13 `1f3ec21` was never picked up separately); see [2026-11-02-signin-reminder-1-1-14](entries/2026-11-02-signin-reminder-1-1-14.md).
 - [Manifest declares `privacyPolicyUrl` again (https://ai.flybest.org/privacy); validated and installed on Claude Code 2.1.76 and 2.1.316; version unchanged](entries/2026-11-02-privacy-policy-url.md)
 - Directory receipt and scanner wording fix: `a2ffc0c` serves with the privacy note cleared; two records no longer name the icon image inside a code span (the directory's `UNREAD_ASSET_REFERENCED` warning); see [2026-11-02-privacy-policy-url](entries/2026-11-02-privacy-policy-url.md).
+- 2026-11-02 16:15 PST directory receipt: `67ef49d` serves with the privacy note and the image-reference warning cleared; see [2026-11-02-privacy-policy-url](entries/2026-11-02-privacy-policy-url.md).

@@ -24,6 +24,7 @@ Every Claude directory version since 1.1.6 shows the validation note "No privacy
 
 - Commit: see this record's Git commit. Push to `main` and the directory receipt to be appended.
 - 2026-11-02 16:10 PST: `addb0db` and its date fix `a2ffc0c` were pushed; the directory scanned `a2ffc0c` and serves it (v1.1.14). The "No privacy policy URL" note is gone ("1 fixed"). The image-reference warning gained this record (see Remaining notes), corrected in the next commit.
+- 2026-11-02 16:15 PST: the directory serves `67ef49d` (v1.1.14): "no new findings, 2 fixed" against `a2ffc0c`. Both the privacy note and the image-reference warning are gone. Standing items: the icon note (informational), the credential warning, the root `CLAUDE.md` warning, and a new informational line saying the directory reads `privacyPolicyUrl` for the listing while Claude Code ignores it at load ("No action needed").
 
 ## Remaining notes
 
