@@ -10,6 +10,7 @@
   "homepage": "https://github.com/flybestorg-cyber/flybest-connector",
   "repository": "https://github.com/flybestorg-cyber/flybest-connector",
   "license": "CC-BY-4.0",
+  "privacyPolicyUrl": "https://ai.flybest.org/privacy",
   "keywords": [
     "travel",
     "hotels",

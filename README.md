@@ -226,8 +226,10 @@ authentication (also when the plugin arrived through account sync), the hotel to
 unavailable until you complete this sign-in.
 
 **Validation and updates:** `claude plugin validate` checks the package; it does
-not install it or complete your hotel-tool authorization. The current Claude
-manifest omits the old `displayName` and `privacyPolicyUrl` keys removed in 1.1.6.
+not install it or complete your hotel-tool authorization. The Claude manifest
+declares `privacyPolicyUrl` again (removed in 1.1.6, restored 2026-11-03; every
+Claude Code version that can install this plugin accepts it); `displayName` stays
+out.
 The maintainer's root `CLAUDE.md` is not plugin context; the customer Skill ships
 under `skills/`. Existing installations need to update the plugin to receive
 changed Skill instructions (see [Updating](#updating)).
