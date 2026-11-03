@@ -69,3 +69,4 @@
 - [Manifest declares `privacyPolicyUrl` again (https://ai.flybest.org/privacy); validated and installed on Claude Code 2.1.76 and 2.1.316; version unchanged](entries/2026-11-02-privacy-policy-url.md)
 - Directory receipt and scanner wording fix: `a2ffc0c` serves with the privacy note cleared; two records no longer name the icon image inside a code span (the directory's `UNREAD_ASSET_REFERENCED` warning); see [2026-11-02-privacy-policy-url](entries/2026-11-02-privacy-policy-url.md).
 - 2026-11-02 16:15 PST directory receipt: `67ef49d` serves with the privacy note and the image-reference warning cleared; see [2026-11-02-privacy-policy-url](entries/2026-11-02-privacy-policy-url.md).
+- 2026-11-02 18:29 PST: listing icon uploaded in the developer portal (the repository's existing 512×512 image) and waiting for Anthropic review; plugin unchanged; see [2026-11-02-privacy-policy-url](entries/2026-11-02-privacy-policy-url.md).

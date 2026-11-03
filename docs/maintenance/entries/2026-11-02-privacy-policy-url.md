@@ -25,12 +25,13 @@ Every Claude directory version since 1.1.6 shows the validation note "No privacy
 - Commit: see this record's Git commit. Push to `main` and the directory receipt to be appended.
 - 2026-11-02 16:10 PST: `addb0db` and its date fix `a2ffc0c` were pushed; the directory scanned `a2ffc0c` and serves it (v1.1.14). The "No privacy policy URL" note is gone ("1 fixed"). The image-reference warning gained this record (see Remaining notes), corrected in the next commit.
 - 2026-11-02 16:15 PST: the directory serves `67ef49d` (v1.1.14): "no new findings, 2 fixed" against `a2ffc0c`. Both the privacy note and the image-reference warning are gone. Standing items: the icon note (informational), the credential warning, the root `CLAUDE.md` warning, and a new informational line saying the directory reads `privacyPolicyUrl` for the listing while Claude Code ignores it at load ("No action needed").
+- 2026-11-02 18:29 PST: on Jay's instruction the repository's root icon image (512×512 PNG, unchanged since 2026-09-27, sha256 `45407a08…`) was uploaded in the developer portal's Listing tab → Icon. The portal shows "Icon: Waiting for review"; the public listing keeps the letter placeholder until Anthropic approves it. No plugin content or version changed.
 
 ## Remaining notes
 
 The other standing directory notes are unchanged and deliberate:
 - The icon image passed without a code check: it is a plain image file.
-- The listing icon cannot be changed from the manifest. Claude takes a manifest icon only at first submission, and this listing recorded it as a path the portal does not display. It shows a letter until an image is uploaded in the developer portal's Listing tab, which is the owner's action.
+- The listing icon cannot be changed from the manifest. Claude takes a manifest icon only at first submission, and this listing recorded it as a path the portal does not display. It shows a letter until an image is uploaded in the developer portal's Listing tab, which is the owner's action. Uploaded 2026-11-02 18:29 PST and waiting for review (see Version and release status).
 - The credential warning concerns the connector's sign-in, which the user starts; the plugin reads nothing from the user's machine.
 - "Image or font file that the plugin's code could run" (`UNREAD_ASSET_REFERENCED`) flagged Markdown records that name an image file inside a code span: the 2026-10-26 ChatGPT package record, and this record's first version (directory scan of `a2ffc0c`). Records that mention the file in plain text were not flagged. Nothing runs these files. Both lines now describe the image without its file name. That is a wording change in the 10-26 record only; its facts are unchanged.
 - The root `CLAUDE.md` is maintainer context, not plugin context.
