@@ -227,7 +227,7 @@ unavailable until you complete this sign-in.
 
 **Validation and updates:** `claude plugin validate` checks the package; it does
 not install it or complete your hotel-tool authorization. The Claude manifest
-declares `privacyPolicyUrl` again (removed in 1.1.6, restored 2026-11-03; every
+declares `privacyPolicyUrl` again (removed in 1.1.6, restored 2026-11-02; every
 Claude Code version that can install this plugin accepts it); `displayName` stays
 out.
 The maintainer's root `CLAUDE.md` is not plugin context; the customer Skill ships
