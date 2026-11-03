@@ -9,7 +9,7 @@
 
 The ChatGPT plugin went live with package version 1.1.8. Its bundled skill was this repository's 1.1.7 skill (one line changed, see below), so ChatGPT users did not get the 1.1.8 loyalty wording, the 1.1.9 payment-page wording, the 1.1.10 search-first behaviour or the 1.1.11 Marriott member-rate note. Updating skills or listing data on ChatGPT needs a new package version and a review; the MCP tool definitions and server instructions follow the live server through OpenAI's continuous review and need no new version.
 
-The ChatGPT package uses OpenAI's Codex format (`.codex-plugin/plugin.json`, `.mcp.json`, `assets/icon.png`, `skills/`), not this repository's `.claude-plugin` layout, so it cannot be built from this repository alone.
+The ChatGPT package uses OpenAI's Codex format (`.codex-plugin/plugin.json`, `.mcp.json`, an icon image under `assets/`, `skills/`), not this repository's `.claude-plugin` layout, so it cannot be built from this repository alone.
 
 ## Change and reason
 
