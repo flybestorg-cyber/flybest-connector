@@ -26,3 +26,4 @@ Real Claude Code (Haiku and Sonnet) against production on 2026-11-05, asked in C
 ## Release status
 
 - Push and directory receipt: appended after release.
+- 2026-11-06: Claude directory holds 1.1.15–1.1.17 under the policy rule "Uses a credential from the user's machine" (on `.claude-plugin/plugin.json`, which declares only the HTTP MCP URL; a warning on every version until 2026-11-03, a hold since); 1.1.14 keeps serving. On the owner's go-ahead a note asking a reviewer to clear the hold was e-mailed to the directory team.
