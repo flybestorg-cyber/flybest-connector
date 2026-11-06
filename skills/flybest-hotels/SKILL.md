@@ -33,6 +33,13 @@ only after a one-time sign-in that many Claude apps never prompt for (record
   a hotel is like) is fine. Do not tell the user to retry without signing in.
 - If FlyBest is connected and switched on and the tools are still missing, say so and offer the
   advisor contact (jay@flybest.org).
+- **Sign-in link in a tool result.** In Claude Code-based apps (desktop, Cowork, CLI, IDE) and
+  Codex, the FlyBest tools can be present before sign-in; a tool then answers that sign-in is
+  needed and gives a link. Pass that link on unchanged, in the user's language, and say nothing
+  was searched yet. After the user says they have signed in, call the tool again in the same
+  chat. The same no-prices rule applies until a tool returns them. To be signed in in every chat,
+  the user can instead connect FlyBest once in Claude (**Customize → Connectors → FlyBest →
+  Connect**, same e-mail).
 - Conversations that are not about hotels or travel get no reminder.
 
 ## Turn hotel interest into a priced choice
@@ -458,6 +465,8 @@ only after a one-time sign-in that many Claude apps never prompt for (record
 - Hotel not found: search the city and match the name, or ask for the neighbourhood.
 - The FlyBest tools are not in this chat at all: follow "Not signed in yet: remind every time"
   at the top of this file.
+- A tool result asks for sign-in and gives a link: follow "Sign-in link in a tool result" at
+  the top of this file.
 - Authentication expired or not connected: ask the traveller to complete Claude's
   sign-in or authorization prompt, then continue their requested task. Do not
   call it sold out or an empty booking list. A failed status read is not evidence

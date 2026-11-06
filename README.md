@@ -221,10 +221,11 @@ Or inside a Claude Code session:
 /plugin install flybest-hotels@flybest
 ```
 
-On first use, run `/mcp`, pick the FlyBest server (`plugin:flybest-hotels:flybest`), and authenticate. A browser page opens;
-sign in with an e-mail code. If `claude mcp list` or `/mcp` shows the server as needing
-authentication (also when the plugin arrived through account sync), the hotel tools stay
-unavailable until you complete this sign-in.
+On first use, the FlyBest tools are available right away. The first hotel lookup answers with a
+one-time sign-in link: open it, enter your e-mail and the 6-digit code, then ask again in the same
+chat. Each new chat signs in the same way. To stay signed in in every chat, connect FlyBest once
+in Claude (Customize → Connectors → FlyBest → Connect) with the same e-mail. The same sign-in link
+works in Codex when `https://ai.flybest.org/mcp` is added as an MCP server.
 
 **Validation and updates:** `claude plugin validate` checks the package; it does
 not install it or complete your hotel-tool authorization. The Claude manifest
