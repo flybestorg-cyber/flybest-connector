@@ -37,9 +37,14 @@ only after a one-time sign-in that many Claude apps never prompt for (record
   Codex, the FlyBest tools can be present before sign-in; a tool then answers that sign-in is
   needed and gives a link. Pass that link on unchanged, in the user's language, and say nothing
   was searched yet. After the user says they have signed in, call the tool again in the same
-  chat. The same no-prices rule applies until a tool returns them. To be signed in in every chat,
-  the user can instead connect FlyBest once in Claude (**Customize → Connectors → FlyBest →
-  Connect**, same e-mail).
+  chat. The same no-prices rule applies until a tool returns them. **In Claude apps signed in
+  with a Claude account, always add the lasting option** with the link: every chat is signed in
+  once FlyBest is connected in Claude (**Customize → Connectors → FlyBest → Connect**, same
+  e-mail). That connection does not sign in Codex or a Claude Code session that uses an API key;
+  there each chat signs in with its link.
+- **Two sets of FlyBest tools in one chat** (the plugin's and a FlyBest connector already
+  connected in Claude's settings): use the set that returns results; do not pass on a sign-in
+  link while the other set is signed in.
 - Conversations that are not about hotels or travel get no reminder.
 
 ## Turn hotel interest into a priced choice

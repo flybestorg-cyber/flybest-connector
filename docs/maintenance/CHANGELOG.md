@@ -73,3 +73,4 @@
 - [ChatGPT package 1.1.14: the 1.1.14 sign-in reminder with ChatGPT steps (Settings → Apps → Connect); checks passed, approved on submission, published 2026-11-02 about 23:55 PST on the owner's go-ahead](entries/2026-11-02-chatgpt-package-1-1-14.md)
 - [Skill 1.1.15: when no rate verifies the family, the service lists the adults' prices; section 4 presents them as adults-only and offers Jay's help for the stay with children](entries/2026-11-05-family-adults-fallback-1-1-15.md)
 - [Skill 1.1.16: a tool result can carry a one-time sign-in link in Claude Code-based apps and Codex; pass it on, call again after sign-in; lasting option is Connect in Claude settings](entries/2026-11-05-chat-signin-1-1-16.md)
+- [Skill 1.1.17: always name the lasting Connect option with a sign-in link; with two FlyBest tool sets use the signed-in one](entries/2026-11-05-signin-connect-hint-1-1-17.md)

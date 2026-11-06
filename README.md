@@ -223,9 +223,10 @@ Or inside a Claude Code session:
 
 On first use, the FlyBest tools are available right away. The first hotel lookup answers with a
 one-time sign-in link: open it, enter your e-mail and the 6-digit code, then ask again in the same
-chat. Each new chat signs in the same way. To stay signed in in every chat, connect FlyBest once
-in Claude (Customize → Connectors → FlyBest → Connect) with the same e-mail. The same sign-in link
-works in Codex when `https://ai.flybest.org/mcp` is added as an MCP server.
+chat. Each new chat signs in the same way. With Claude Code signed in to your Claude account (not an
+API key), connecting FlyBest once in Claude (Customize → Connectors → FlyBest → Connect, same e-mail)
+signs in every chat. The same sign-in link works in Codex when `https://ai.flybest.org/mcp` is added as
+an MCP server; there each chat signs in with its link.
 
 **Validation and updates:** `claude plugin validate` checks the package; it does
 not install it or complete your hotel-tool authorization. The Claude manifest
