@@ -74,3 +74,4 @@
 - [Skill 1.1.15: when no rate verifies the family, the service lists the adults' prices; section 4 presents them as adults-only and offers Jay's help for the stay with children](entries/2026-11-05-family-adults-fallback-1-1-15.md)
 - [Skill 1.1.16: a tool result can carry a one-time sign-in link in Claude Code-based apps and Codex; pass it on, call again after sign-in; lasting option is Connect in Claude settings](entries/2026-11-05-chat-signin-1-1-16.md)
 - [Skill 1.1.17: always name the lasting Connect option with a sign-in link; with two FlyBest tool sets use the signed-in one](entries/2026-11-05-signin-connect-hint-1-1-17.md)
+- [ChatGPT package 1.1.17: the 1.1.17 skill with ChatGPT wording (no Claude settings steps); published 2026-11-06 about 03:00 PST, replacing 1.1.14](entries/2026-11-06-chatgpt-package-1-1-17.md)
