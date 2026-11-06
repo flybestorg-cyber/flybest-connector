@@ -71,3 +71,4 @@
 - 2026-11-02 16:15 PST directory receipt: `67ef49d` serves with the privacy note and the image-reference warning cleared; see [2026-11-02-privacy-policy-url](entries/2026-11-02-privacy-policy-url.md).
 - 2026-11-02 18:29 PST: listing icon uploaded in the developer portal (the repository's existing 512×512 image) and waiting for Anthropic review; plugin unchanged; see [2026-11-02-privacy-policy-url](entries/2026-11-02-privacy-policy-url.md).
 - [ChatGPT package 1.1.14: the 1.1.14 sign-in reminder with ChatGPT steps (Settings → Apps → Connect); checks passed, approved on submission, published 2026-11-02 about 23:55 PST on the owner's go-ahead](entries/2026-11-02-chatgpt-package-1-1-14.md)
+- [Skill 1.1.15: when no rate verifies the family, the service lists the adults' prices; section 4 presents them as adults-only and offers Jay's help for the stay with children](entries/2026-11-05-family-adults-fallback-1-1-15.md)

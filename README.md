@@ -187,8 +187,9 @@ is supported). Point it at the URL above.
   → city search prices are provisional; the assistant then checks the chosen hotel's rates for
   all four guests and the children's ages. A rate verified for that family
   can be booked directly through a secure payment page, including deposit or non-refundable
-  rates after you accept their terms. If occupancy cannot be verified, Jay can help; an
-  adults-first booking is available only if you explicitly choose it, with free cancellation,
+  rates after you accept their terms. If the hotel cannot verify the children, you see its
+  prices for the two adults, marked as excluding the children, and Jay arranges the family stay;
+  an adults-first booking is available only if you explicitly choose it, with free cancellation,
   no deposit or prepayment, and the children still pending hotel confirmation.
 - "I'm a World of Hyatt member — show me the member rates at the Park Hyatt Tokyo too."
 - "Book the flexible rate under my name — here's my e-mail."

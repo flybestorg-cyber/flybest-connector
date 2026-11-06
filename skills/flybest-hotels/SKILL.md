@@ -287,11 +287,14 @@ only after a one-time sign-in that many Claude apps never prompt for (record
   selected rate's total, payment timing and cancellation penalties; the secure page obtains
   the payer's agreement. The hotel still needs to confirm the booking. Do not send a verified
   family to the advisor solely because children, a deposit or cancellation penalties are present.
-- **When the selected occupancy is unverified, its quote token is missing, or no suitable
-  family rate is available**, offer Jay's help using the advisor's e-mail from the tool result
-  (jay@flybest.org if none is supplied), with hotel, dates, room/rate preference, adult count and each child's
-  age. Do not claim the request has been sent or send an e-mail unless the traveller explicitly
-  requests that message.
+- **When no rate verifies the family**, the tool looks the hotel up again for the adults alone
+  and lists those rates, opening with a note that they are the adults' prices without the
+  children. Show them as exactly that (for example "2 adults, children not included"), never as
+  a family total, and offer Jay's help for the stay with children using the advisor's e-mail from
+  the tool result (jay@flybest.org if none is supplied), with hotel, dates, room/rate preference,
+  adult count and each child's age. The same help applies when a chosen row's occupancy is
+  unverified or its quote token is missing. Do not claim the request has been sent or send an
+  e-mail unless the traveller explicitly requests that message.
 - **Optional adults-first booking:** only after the traveller explicitly chooses this
   alternative, search adults only and use `family_mode="adult_pending"` with an adults-only
   `rate_key`, **free cancellation and no deposit or prepayment**. Still pass `children` and
