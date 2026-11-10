@@ -25,7 +25,8 @@ Service side: sabre-booking `tests/test_review_fix_trip_scope_2026_11_10.py` and
 
 ## Release status
 
-- Push and directory receipt: appended after release.
+- Service release: sabre-booking `d51f6a1`, live 2026-11-10 08:06 PST (the tool descriptions and results with the same wording).
+- Pushed to GitHub `main` on 2026-11-10 after the service release. ChatGPT package unchanged (1.1.17). Whether the Claude directory serves 1.1.20 was not checked at push time.
 
 ## Remaining limits
 
