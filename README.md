@@ -277,9 +277,10 @@ payment page and the booking confirmation yourself.
 
 ## How booking works
 
-1. The assistant asks the connector for a **payment page** for the room you chose. The
-   confirmation goes to the e-mail you signed up with unless you give another one; you can
-   change it on the page.
+1. The assistant asks the connector for a **payment page** for the room you chose. When
+   FlyBest is connected in your app's settings, the confirmation goes to the e-mail you
+   signed up with unless you give another one; you can change it on the page. In a chat
+   signed in with a one-time link, the assistant asks for the e-mail for the confirmation.
 2. You open the page, read the price, deposit and cancellation terms written out in
    full, **tick the box**, and enter your card. You enter the card only on that page,
    operated by FlyBest at ai.flybest.org; the details are sent to the hotel reservation

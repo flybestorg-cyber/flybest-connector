@@ -365,10 +365,12 @@ and the numbered sections give the detail (record 2026-11-06-skill-essentials-1-
   payment page also offers an optional field for it.
 - Confirm in one message: hotel, room and rate, dates, guests, total, cancellation terms,
   guest name **exactly as on the ID** (never invent, transliterate or expand a name),
-  and a phone number if they have one. An e-mail is optional: without one, the page is
-  filled in with the address the traveller signed up with (when the connection has one),
-  and the payer confirms or changes it there. Pass `email` only when the traveller gives
-  one for the confirmation. For multiple rooms, explain that
+  and a phone number if they have one. When FlyBest was connected in the app's connector
+  settings, the page is filled in with the address the traveller signed up with, and the
+  payer confirms or changes it there; pass `email` only when the traveller gives a
+  different one. A chat signed in with a link from a tool result has no such address: ask
+  once for the guest's e-mail for the itinerary and the hotel's confirmation and pass it
+  as `email`; without it no payment page is made. For multiple rooms, explain that
   rooms sold together on one segment may not be independently cancellable; if
   individual-room cancellation is needed, obtain the advisor's help before booking.
   Use details and the rate selection already supplied; a request to book the

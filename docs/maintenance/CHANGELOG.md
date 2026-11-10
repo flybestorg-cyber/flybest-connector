@@ -76,3 +76,4 @@
 - [Skill 1.1.17: always name the lasting Connect option with a sign-in link; with two FlyBest tool sets use the signed-in one](entries/2026-11-05-signin-connect-hint-1-1-17.md)
 - [ChatGPT package 1.1.17: the 1.1.17 skill with ChatGPT wording (no Claude settings steps); published 2026-11-06 about 03:00 PST, replacing 1.1.14](entries/2026-11-06-chatgpt-package-1-1-17.md)
 - [Skill 1.1.18: an "Essentials" section first so the key rules survive compaction; CLAUDE.md moved to .claude/ (directory warning)](entries/2026-11-06-skill-essentials-1-1-18.md)
+- [Skill 1.1.19: a chat signed in by link gives the confirmation e-mail once (the sign-up address is the default only for a connection made in settings); follows the service fix for review finding L5](entries/2026-11-09-chat-link-email-1-1-19.md)
