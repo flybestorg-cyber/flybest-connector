@@ -32,3 +32,5 @@ Service side: sabre-booking `tests/test_review_fix_trip_scope_2026_11_10.py` and
 
 - After an app restart the same visible chat is a new sign-in and no longer lists what it booked before (service record `2026-11-09-signin-cap-and-chat-scope`).
 - The Claude directory may hold a new version for manual review (policy notice on earlier versions, see 2026-11-05 records).
+- Claude directory, checked 2026-11-10 about 08:20 PST: 1.1.20 (`6d2855f`) was picked up within minutes and its scan passed, but it is "held by directory policy, with Anthropic" like 1.1.15–1.1.19 (rules "Uses a credential from the user's machine" on `.claude-plugin/plugin.json` and "Update adds credential forward"). The live version is still 1.1.14 (`aa93765`). The ticket opened with the directory team on 2026-11-06 (#153092987) has had no answer beyond the automatic receipt.
+
