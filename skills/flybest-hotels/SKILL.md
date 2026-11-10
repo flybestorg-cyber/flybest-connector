@@ -442,7 +442,11 @@ and the numbered sections give the detail (record 2026-11-06-skill-essentials-1-
   specific follow-up item; do not describe an otherwise confirmed booking as failed.
 
 ## 6. Their bookings
-- `my_trips` lists only this user's bookings; nobody else's are visible.
+- `my_trips` lists only the bookings made under the current sign-in, and nobody else's: a
+  connection's own bookings, or, in a chat signed in with a one-time sign-in link, only what
+  was booked in that chat since the sign-in. A booking missing from the list is not proof
+  that it does not exist or was cancelled: pass on who the result says can check it, and do
+  not book it again on the strength of an empty list.
 - Identify the intended trip from the user's own returned list and read `my_trip`
   when needed before cancellation. A trip number comes from that list; do not
   substitute a confirmation number or reuse a position from a stale list. When

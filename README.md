@@ -85,7 +85,7 @@ handed that work to the assistant: it looks, it explains, and when you have chos
 | Benefits | Usually cannot show agency-channel benefits | Benefits listed next to each rate, side by side with the public rate |
 | Your hotel loyalty | Varies | Points and elite nights earned as usual; your status benefits on top of the partner benefits |
 | Cancellation terms | You read the fine print | Written out in plain words: free until when, deposit, non-refundable flagged |
-| After booking | Varies | See and cancel your own bookings in the conversation |
+| After booking | Varies | See and cancel the bookings made under the same sign-in, in the conversation |
 
 ## Why book through FlyBest instead of direct
 
@@ -140,7 +140,9 @@ No member discount is guaranteed. Joining Hilton Honors, World of Hyatt, IHG One
 Marriott Bonvoy is free.
 
 Plus: a licensed agency behind every booking (Coastline Travel Advisors), the booking is
-in your name with the hotel, and you can see and cancel it from the assistant.
+in your name with the hotel, and you can see and cancel it from the assistant under the
+same sign-in (a chat signed in with a one-time link lists only the bookings made in that chat;
+jay@flybest.org can check any other).
 
 ## Connect
 

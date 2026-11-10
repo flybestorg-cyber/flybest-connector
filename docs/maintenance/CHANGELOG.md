@@ -77,3 +77,4 @@
 - [ChatGPT package 1.1.17: the 1.1.17 skill with ChatGPT wording (no Claude settings steps); published 2026-11-06 about 03:00 PST, replacing 1.1.14](entries/2026-11-06-chatgpt-package-1-1-17.md)
 - [Skill 1.1.18: an "Essentials" section first so the key rules survive compaction; CLAUDE.md moved to .claude/ (directory warning)](entries/2026-11-06-skill-essentials-1-1-18.md)
 - [Skill 1.1.19: a chat signed in by link gives the confirmation e-mail once (the sign-up address is the default only for a connection made in settings); follows the service fix for review finding L5](entries/2026-11-09-chat-link-email-1-1-19.md)
+- [Skill 1.1.20: the trip list covers the current sign-in (a chat signed in by link lists only its own bookings; an empty list is not proof nothing was booked); follows the service fix for review finding TP-01](entries/2026-11-10-trip-list-scope-1-1-20.md)
