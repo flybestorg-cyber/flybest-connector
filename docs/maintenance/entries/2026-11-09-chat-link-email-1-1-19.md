@@ -11,7 +11,7 @@ The skill and README said the payment page is filled in with the address the tra
 
 ## Change and reason
 
-- SKILL.md: the confirmation bullet separates the two cases. Connected in settings: the sign-up address is the default, pass `email` only for a different one. Signed in by link: ask once for the guest's e-mail and pass it; without it no payment page is made.
+- SKILL.md: the confirmation bullet separates the two cases. Connected in settings: the sign-up address is the default, set `email` only for a different one. Signed in by link: ask once for the guest's e-mail and set it; without it no payment page is made.
 - README.md: step 1 of "How booking works" says the same in the traveller's words.
 - Nothing else in the skill changes. The ChatGPT package is not affected (ChatGPT always connects through its own settings) and is not resubmitted.
 

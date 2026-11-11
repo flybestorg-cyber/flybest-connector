@@ -20,7 +20,7 @@ Families at hotels that do not price children see the hotel's adult prices, clea
 ## Verification
 
 - Text checked against the service output in the sabre-booking tests (`tests/test_family_adults_fallback_2026_11_05.py`) and the pinned version in `tests/test_public_contract_repair_2026_10_03.py`.
-- Directory note (2026-11-05): the live 1.1.14 shows a directory policy hold from 2026-11-04, "Uses a credential from the user's machine" (rule `MCP_FORWARDS_CREDENTIAL_ENV`, flagged on `.claude-plugin/plugin.json`). The manifest has no credential or environment variable, only the HTTP MCP URL; 1.1.14 keeps serving. 1.1.15 may wait for a reviewer before going live.
+- Directory note (2026-11-05): the live 1.1.14 shows a directory policy hold from 2026-11-04, "Uses a credential from the user's machine" (rule MCP_FORWARDS_CREDENTIAL_ENV, flagged on `.claude-plugin/plugin.json`). The manifest has no credential or environment variable, only the HTTP MCP URL; 1.1.14 keeps serving. 1.1.15 may wait for a reviewer before going live.
 
 ## Release status
 

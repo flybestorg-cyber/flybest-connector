@@ -9,7 +9,7 @@
 
 - **E-mail asked twice.** Travellers sign in with an e-mail code, yet the skill told the assistant to collect an e-mail before creating the payment page, and the public tool schema required one. The payment page already has a confirmation-address field the payer can change.
 - **"Price changed" had one case.** The skill said a changed price is shown on the existing payment page for the traveller to agree again. When the payment-page request itself is refused (`RATE_CHANGED_BEFORE_BOOKING`, `RATE_UNAVAILABLE`, `PRICE_CHECK_UNAVAILABLE`, `OCCUPANCY_MISMATCH`), no page exists, so following that sentence sent the traveller looking for a page that was never made.
-- **The page window was easy to miss.** A payment page is open for about ten minutes. The skill said to pass on "the returned expiry" without saying when to create the page or what happens after it closes.
+- **The page window was easy to miss.** A payment page is open for about ten minutes. The skill said to relay "the returned expiry" without saying when to create the page or what happens after it closes.
 
 ## Change and reason
 

@@ -11,7 +11,7 @@ The skill said "`my_trips` lists only this user's bookings" and the README said 
 
 ## Change and reason
 
-- SKILL.md section 6: the list covers the bookings made under the current sign-in — a connection's own, or, in a link-signed chat, only what was booked in that chat since the sign-in. A booking missing from the list is not proof that it does not exist or was cancelled; pass on who the result says can check it, and do not book again on the strength of an empty list.
+- SKILL.md section 6: the list covers the bookings made under the current sign-in — a connection's own, or, in a link-signed chat, only what was booked in that chat since the sign-in. A booking missing from the list is not proof that it does not exist or was cancelled; say who the result says can check it, and do not book again on the strength of an empty list.
 - README.md: the two sentences that promised "your own bookings" now say "under the same sign-in", and name jay@flybest.org for a booking made elsewhere.
 - The wording mirrors the service's tool descriptions and results (sabre-booking record `2026-11-10-review-fix-trip-scope`). Bookings are not merged by e-mail; that isolation is deliberate.
 

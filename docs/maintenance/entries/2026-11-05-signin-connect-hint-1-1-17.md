@@ -7,7 +7,7 @@
 
 ## Problem and cause
 
-The owner asked whether travellers are sure to be told to connect FlyBest once (so every chat is signed in) rather than signing in per chat. The in-chat link only signs in one chat. A second gap: someone who already connected FlyBest in Claude's settings and also has the plugin sees two sets of FlyBest tools in Claude Code-based apps; if the assistant picked the plugin's set, it would pass on a sign-in link although the person is signed in.
+The owner asked whether travellers are sure to be told to connect FlyBest once (so every chat is signed in) rather than signing in per chat. The in-chat link only signs in one chat. A second gap: someone who already connected FlyBest in Claude's settings and also has the plugin sees two sets of FlyBest tools in Claude Code-based apps; if the assistant picked the plugin's set, it would relay a sign-in link although the person is signed in.
 
 ## Change and reason
 

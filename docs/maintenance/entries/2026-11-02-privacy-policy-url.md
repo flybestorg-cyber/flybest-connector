@@ -15,7 +15,7 @@ Every Claude directory version since 1.1.6 shows the validation note "No privacy
 
 ## Compatibility and verification (2026-11-02)
 
-- `claude plugin validate .` with the key: Claude Code 2.1.316 (current) passes with nothing to report; 2.1.250 passes and notes the field as unknown and ignored at load; 2.1.150 and 2.1.76 pass.
+- `claude plugin validate .` with the key: Claude Code 2.1.316 (current) passes with nothing to report; 2.1.250 passes and notes the field as unknown and ignored at load; 2.1.150 and 2.1.76 validate too.
 - Real install from a local marketplace copy (`plugin marketplace add` + `plugin install flybest-hotels@flybest`, isolated HOME): succeeds on 2.1.76 and 2.1.316, and the installed manifest carries the key.
 - 2.1.76 is the oldest version that installs this plugin at all (bisected 2026-11-02), so restoring the key loses no client.
 - `https://ai.flybest.org/privacy` answers HTTP 200.

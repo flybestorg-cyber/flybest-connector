@@ -35,7 +35,7 @@ only after a one-time sign-in that many Claude apps never prompt for (record
   advisor contact (jay@flybest.org).
 - **Sign-in link in a tool result.** In Claude Code-based apps (desktop, Cowork, CLI, IDE) and
   Codex, the FlyBest tools can be present before sign-in; a tool then answers that sign-in is
-  needed and gives a link. Pass that link on unchanged, in the user's language, and say nothing
+  needed and gives a link. Relay that link unchanged, in the user's language, and say nothing
   was searched yet. After the user says they have signed in, call the tool again in the same
   chat. The same no-prices rule applies until a tool returns them. **In Claude apps signed in
   with a Claude account, always add the lasting option** with the link: every chat is signed in
@@ -43,7 +43,7 @@ only after a one-time sign-in that many Claude apps never prompt for (record
   e-mail). That connection does not sign in Codex or a Claude Code session that uses an API key;
   there each chat signs in with its link.
 - **Two sets of FlyBest tools in one chat** (the plugin's and a FlyBest connector already
-  connected in Claude's settings): use the set that returns results; do not pass on a sign-in
+  connected in Claude's settings): use the set that returns results; do not relay a sign-in
   link while the other set is signed in.
 - Conversations that are not about hotels or travel get no reminder.
 
@@ -61,7 +61,7 @@ and the numbered sections give the detail (record 2026-11-06-skill-essentials-1-
 - Start a search or rate answer with the result's "Note for the traveller" (after the
   sample-dates sentence when there is one) and keep its "Membership:" question near the start.
   Do not re-ask what the traveller already answered.
-- Children: ask each child's age and pass the actual party. Book directly only a row that says
+- Children: ask each child's age and search with the actual party. Book directly only a row that says
   "Family occupancy verified for this rate". When none does, the result lists the adults'
   prices: present them as prices for the adults only, without the children, and offer Jay's
   help (jay@flybest.org) for the stay with children.
@@ -325,7 +325,7 @@ and the numbered sections give the detail (record 2026-11-06-skill-essentials-1-
   direct family booking available." (what the tool description calls `direct_family_bookable`).
   Its "Requested family for this rate" line shows the party the rate was quoted for (its
   `family_occupancy`), and only such a row carries a `family_quote_token=` line. A row that says
-  "Family occupancy is unverified for this rate" is not verified for the family. Pass the
+  "Family occupancy is unverified for this rate" is not verified for the family. Hand the
   verified row's `rate_key` and `family_quote_token` unchanged to `sabre_hotel_card_link`, with
   `family_mode="direct"` and the actual adults, children and ages. Never reuse another row's
   token. The page rechecks occupancy before booking.
@@ -343,7 +343,7 @@ and the numbered sections give the detail (record 2026-11-06-skill-essentials-1-
   e-mail unless the traveller explicitly requests that message.
 - **Optional adults-first booking:** only after the traveller explicitly chooses this
   alternative, search adults only and use `family_mode="adult_pending"` with an adults-only
-  `rate_key`, **free cancellation and no deposit or prepayment**. Still pass `children` and
+  `rate_key`, **free cancellation and no deposit or prepayment**. Still include `children` and
   `child_ages` for advisor follow-up and keep the actual adult count. After booking, the advisor
   contacts the hotel to confirm the children, bedding and any extra charges. That adult booking
   does not confirm the whole family; the children's occupancy and charges remain pending.
@@ -355,7 +355,7 @@ and the numbered sections give the detail (record 2026-11-06-skill-essentials-1-
   the two lists' lowest prices a child surcharge; never invent a child fee.
 
 ## 5. Booking
-- **Hotel loyalty number.** Pass the number the traveller gave before quoting as `loyalty_id`
+- **Hotel loyalty number.** Use the number the traveller gave before quoting as `loyalty_id`
   without asking again (for a members-only rate, it must be the one the rate was searched with).
   Ask only if membership never came up (the rate list names the programme, or go by the brand:
   Marriott Bonvoy, World of Hyatt, Hilton Honors, IHG One Rewards, ALL Accor …).
@@ -367,9 +367,9 @@ and the numbered sections give the detail (record 2026-11-06-skill-essentials-1-
   guest name **exactly as on the ID** (never invent, transliterate or expand a name),
   and a phone number if they have one. When FlyBest was connected in the app's connector
   settings, the page is filled in with the address the traveller signed up with, and the
-  payer confirms or changes it there; pass `email` only when the traveller gives a
+  payer confirms or changes it there; set `email` only when the traveller gives a
   different one. A chat signed in with a link from a tool result has no such address: ask
-  once for the guest's e-mail for the itinerary and the hotel's confirmation and pass it
+  once for the guest's e-mail for the itinerary and the hotel's confirmation and set it
   as `email`; without it no payment page is made. For multiple rooms, explain that
   rooms sold together on one segment may not be independently cancellable; if
   individual-room cancellation is needed, obtain the advisor's help before booking.
@@ -445,7 +445,7 @@ and the numbered sections give the detail (record 2026-11-06-skill-essentials-1-
 - `my_trips` lists only the bookings made under the current sign-in, and nobody else's: a
   connection's own bookings, or, in a chat signed in with a one-time sign-in link, only what
   was booked in that chat since the sign-in. A booking missing from the list is not proof
-  that it does not exist or was cancelled: pass on who the result says can check it, and do
+  that it does not exist or was cancelled: say who the result says can check it, and do
   not book it again on the strength of an empty list.
 - Identify the intended trip from the user's own returned list and read `my_trip`
   when needed before cancellation. A trip number comes from that list; do not

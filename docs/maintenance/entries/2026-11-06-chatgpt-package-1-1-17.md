@@ -11,7 +11,7 @@ The published 1.1.14 package with:
 - `skills/flybest-hotels/SKILL.md` replaced with this repository's 1.1.17 skill (family adults' prices, sign-in link in a tool result, two sets of tools);
 - `.codex-plugin/plugin.json` version 1.1.17;
 - the three 1.1.14 ChatGPT edits kept (Settings → Apps → Connect reminder, neutral comment, "the current client's sign-in");
-- the sign-in-link bullets written without Claude's settings: in apps such as Codex a tool can return a one-time link; pass it on, call again after sign-in, a new chat signs in with its own link; with two sets of FlyBest tools use the signed-in one. The skill contains no Claude-specific step.
+- the sign-in-link bullets written without Claude's settings: in apps such as Codex a tool can return a one-time link; relay it, call again after sign-in, a new chat signs in with its own link; with two sets of FlyBest tools use the signed-in one. The skill contains no Claude-specific step.
 
 References, listing text, URLs, icon and MCP configuration are unchanged. No tool or server change: the server behaviour (family fallback, chat sign-in) is already live for every client.
 
