@@ -80,3 +80,4 @@
 - [Skill 1.1.20: the trip list covers the current sign-in (a chat signed in by link lists only its own bookings; an empty list is not proof nothing was booked); follows the service fix for review finding TP-01](entries/2026-11-10-trip-list-scope-1-1-20.md)
 - [ChatGPT package 1.1.20: the 1.1.20 skill with ChatGPT wording; published 2026-11-10 about 09:22 PST, replacing 1.1.17](entries/2026-11-10-chatgpt-package-1-1-20.md)
 - [Skill 1.1.21: the verb the Claude directory's check reads as a password-manager command is reworded in the skill and the records (versions since 1.1.15 are held for a reviewer); no change in behaviour](entries/2026-11-11-directory-hold-wording-1-1-21.md)
+- [README: names who runs FlyBest (Jay Yan, Virtuoso advisor; Coastline Travel Advisors with its registration numbers) and links the About page; documentation only, version stays 1.1.21](entries/2026-11-18-readme-who-runs-it.md)

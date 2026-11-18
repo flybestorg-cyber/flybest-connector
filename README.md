@@ -15,6 +15,12 @@ connect to the MCP service directly. Free to use; you pay only the hotel.
 
 **Overview, examples and FAQ:** https://flybest.org/en/ai/ · 中文：https://flybest.org/ai/
 
+**Who runs it:** Jay Yan, a Virtuoso travel advisor in Garden Grove, California (English and
+Mandarin). Bookings are made through Coastline Travel Advisors, a Virtuoso member agency
+(California Seller of Travel CST 2040360-40, ARC 05582905).
+[About Jay](https://flybest.org/en/about/) ·
+[Virtuoso advisor profile](https://www.virtuoso.com/travel/advisors/15431145/jay-yan)
+
 > Keywords: AI travel booking · AI hotel booking · hotel booking agent · travel agent AI ·
 > Claude plugin · hotel Skills · MCP server · Sabre GDS · luxury travel · preferred-partner perks
 
@@ -326,12 +332,16 @@ still apply.
 
 ## Who runs this
 
-FlyBest (flybest.org) — an independent luxury travel advisor based in California, USA,
-affiliated with Coastline Travel Advisors, a licensed host travel agency. FlyBest operates this
+FlyBest (flybest.org) is run by Jay Yan, an independent luxury travel advisor based in Garden
+Grove, California, USA, who works in English and Mandarin. He is a Virtuoso travel advisor
+([profile](https://www.virtuoso.com/travel/advisors/15431145/jay-yan)) affiliated with Coastline
+Travel Advisors, a licensed host travel agency and Virtuoso member (California Seller of Travel
+CST 2040360-40, ARC 05582905; 12373 Lewis St., Ste. 201, Garden Grove, CA). FlyBest operates this
 connector and is responsible for its signup and booking data; hotel bookings are placed through
 Coastline's reservation system on its accreditation. The connector is free to use; you pay only
 the hotel. FlyBest is paid by commission from the hotel; you do not pay more for booking
-through it. Contact: jay@flybest.org.
+through it. Contact: jay@flybest.org. More about Jay: https://flybest.org/en/about/
+(中文：https://flybest.org/about/).
 
 This repository holds the public documentation and the assistant skill. The connector's
 server code is not published.
