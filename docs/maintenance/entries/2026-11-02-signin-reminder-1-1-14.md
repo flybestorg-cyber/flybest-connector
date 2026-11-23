@@ -39,3 +39,7 @@ Claude Code (current release) in a fresh profile with this plugin loaded from th
 ## Remaining limits
 
 The reminder appears only when the Skill is consulted, which the description now asks for in every hotel or travel conversation; Claude can still occasionally skip a Skill. The sign-in itself is still started by the user; Claude apps decide whether to prompt for it.
+
+## Later correction — 2026-11-23
+
+Version 1.1.22 withdraws one half of this record's rule: the part that kept every hotel price out of a reply before sign-in, whatever its source. The Claude directory refuses text that restricts the assistant's other tools and sources. The reminder at the start of each hotel or travel reply stays, and FlyBest's own prices still exist only after sign-in. See [2026-11-23-other-sources-1-1-22](2026-11-23-other-sources-1-1-22.md).

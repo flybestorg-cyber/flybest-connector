@@ -36,6 +36,7 @@
   - 2026-11-23（美西）分支 Validate 第一次：7 项检查，阻断项消失，多出一条「Policy hold」，点名本记录（原因见「验证」）。
   - 2026-11-23（美西）分支 Validate 第二次（改掉图标文件名之后）：7 项检查，没有阻断、没有「Policy hold」，只剩清单里隐私政策网址字段的提示（门户写明不用处理）。期间门户提示请求过多，等了约一分钟后重试成功。
   - 2026-11-23（美西）合并并推送到 `main`。目录定时检查拾取后的结果另行补充。
+  - 2026-11-23（美西）凌晨，目录定时检查拾取 `fcf4e3b`（46 个文件，225.2 kB）：Failed，「Refused by directory policy」。阻断项「Text tells Claude not to use other tools」，不点名文件；对比上一版「1 new finding, 1 fixed」，「Policy review didn't complete」没有了，「Files the policy review couldn't cover」还在。文件名那条阻断没有再出现。新阻断的处理见 `2026-11-23-other-sources-1-1-22.md`。
 
 ## 剩余边界与后续事项
 - 插件整体仍是「held for review」：任何版本都要 Anthropic 的审核员放行才会上线，这次改动只是让最新一版不再带阻断项。
