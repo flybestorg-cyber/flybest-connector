@@ -241,8 +241,8 @@ not install it or complete your hotel-tool authorization. The Claude manifest
 declares `privacyPolicyUrl` again (removed in 1.1.6, restored 2026-11-02; every
 Claude Code version that can install this plugin accepts it); `displayName` stays
 out.
-The maintainer's root `CLAUDE.md` is not plugin context; the customer Skill ships
-under `skills/`. Existing installations need to update the plugin to receive
+The maintainer rules live in `MAINTAINING.md`, which is not plugin context; the
+customer Skill ships under `skills/`. Existing installations need to update the plugin to receive
 changed Skill instructions (see [Updating](#updating)).
 
 For older Claude Code versions, or if you only want the tools:
@@ -349,4 +349,4 @@ server code is not published.
 
 ## Code maintenance
 
-Before changing this repository, read [AGENTS.md](AGENTS.md) and the [maintenance records](docs/maintenance/README.md). Every change includes its root cause or reason, approach and verification in the linked log. See [CONTRIBUTING.md](CONTRIBUTING.md).
+Before changing this repository, read [MAINTAINING.md](MAINTAINING.md) and the [maintenance records](docs/maintenance/README.md). Every change includes its root cause or reason, approach and verification in the linked log. See [CONTRIBUTING.md](CONTRIBUTING.md).

@@ -1,6 +1,6 @@
 # Maintaining this repository
 
-Read [AGENTS.md](AGENTS.md) before starting and follow the [maintenance index](docs/maintenance/README.md).
+Read [MAINTAINING.md](MAINTAINING.md) before starting and follow the [maintenance index](docs/maintenance/README.md).
 
 Every change must include its reason and verification in a dated maintenance record, linked from the change log. The record should let the next maintainer understand what failed, why the chosen fix works, and which protection must stay. Reviewers check the linked prior records, changed behavior, evidence and actual release status alongside the code. Do not substitute a passing test count for examining the customer continuation path.
 
