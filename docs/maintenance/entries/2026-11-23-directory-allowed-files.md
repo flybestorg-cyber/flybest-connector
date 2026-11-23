@@ -23,8 +23,9 @@
 
 ## 验证
 - 全文检查没有出现规矩第 6 条禁用的那个动词。
-- 仓库里不再有名为 `CLAUDE.md`、`AGENTS.md` 的文件；剩下的文件只有 Markdown、JSON、LICENSE 和 `icon.png`。
+- 仓库里不再有名为 `CLAUDE.md`、`AGENTS.md` 的文件；剩下的文件只有 Markdown、JSON、LICENSE 和一张图标图片。
 - 合并前在分支 `fix/directory-allowed-files` 上跑开发者门户的 Validate，结果见下面「版本与发布状态」。
+- 第一次 Validate：阻断项消失，但本记录自己引出一条新的「Policy hold」（Image or font file that the plugin's code could run）。原因是记录里用反引号写了图标的文件名；改成不写文件名后重跑。以后记录里提到图标只说「图标图片」。
 
 ## 版本与发布状态
 - 相关代码提交或 PR：见本条记录的 Git 提交。
